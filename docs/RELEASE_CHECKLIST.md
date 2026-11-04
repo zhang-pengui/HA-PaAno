@@ -1,4 +1,6 @@
-# Local candidate release checklist
+# Historical local candidate release checklist
+
+Historical scope: the checklist below records the initial local preparation before publication; its statuses and authorization statement describe that stage only. The source repository is now public on GitHub, while the manuscript remains under revision at Applied Intelligence. No GitHub Release or tag has been created. Publication does not change the verification limits recorded below.
 
 Status meanings: PASS = verified within stated scope; BLOCKED = unresolved prerequisite; NOT VERIFIED = insufficient execution/evidence. A local candidate is not a published or full-GPU-certified release.
 

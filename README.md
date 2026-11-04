@@ -1,8 +1,8 @@
 # HA-PaAno
 
-Local release candidate for **HA-PaAno: Raw-Statistics-Aware Patch Representation Refinement for Univariate and Multivariate Time-Series Anomaly Detection**.
+Official implementation and reproducibility code for **HA-PaAno: Raw-Statistics-Aware Patch Representation Refinement for Univariate and Multivariate Time-Series Anomaly Detection**.
 
-Paper status: revision manuscript. No acceptance, DOI or publication details are claimed. This directory has not been uploaded or released.
+The source code is publicly available in this repository. The manuscript is currently under revision at Applied Intelligence. No acceptance, DOI or publication details are claimed; no GitHub Release or tag has been created.
 
 HA-PaAno studies how raw statistical context and temporal refinements complement normalized patch representations within PaAno. U-JLC and M-C are the reported evaluation configurations. The later complete tuning study ranks C first on average in both tracks; it does not establish U-JLC as a universally optimal choice. It refines the embedding pathway while retaining PaAno's learning objectives and memory-bank anomaly scoring; it does not introduce those foundations.
 
