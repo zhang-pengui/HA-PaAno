@@ -1,0 +1,203 @@
+{
+  "source_git_head": "d4c67116190efa4592dc6a8a157ced0def68b6af",
+  "records": [
+    {
+      "source": "main.py",
+      "source_sha256": "158a3d92d4cd91150fb65a3ca05452b40ec9331b81be55f87b13d4059f9fc42c",
+      "candidate": "src/ha_paano/_reference/pipeline.py",
+      "candidate_sha256": "369aae7b07065c5eee49ae5eb8fa8a40f5f064b255ccf04cb7a8cbd97bed9363",
+      "executable_ast_except_imports_equal": true,
+      "diff": "--- main.py\n+++ src/ha_paano/_reference/pipeline.py\n@@ -10,21 +10,21 @@\n \n from sklearn.exceptions import UndefinedMetricWarning\n \n-from model import PatchEncoder\n-from train import train_model\n-from utils.data_preprocess import *\n-from utils.utils import *\n-from utils.evaluation import *\n-from utils.metrics import get_metrics\n-\n-from utils.result_saver import (\n+from ..binding import PatchEncoder\n+from ..binding import train_model\n+from .utils.data_preprocess import *\n+from .utils.utils import *\n+from .utils.evaluation import *\n+from .utils.metrics import get_metrics\n+\n+from .utils.result_saver import (\n     ensure_dir,\n     save_one_file_result,\n     append_summary_csv,\n     save_dataset_summary\n )\n \n-from utils.cac_activity_logger import (\n+from .utils.cac_activity_logger import (\n     start_cac_activity_collection,\n     stop_cac_activity_collection,\n     save_cac_activity_for_file\n"
+    },
+    {
+      "source": "model_baseline.py",
+      "source_sha256": "a967089b114ec8765d5b99cb6b77fff6ec05d6a912204bc379764dbc2a87dc63",
+      "candidate": "src/ha_paano/_reference/model_baseline.py",
+      "candidate_sha256": "62e14d0f7678c8d2589ff3498bb4f109c518357b31dae663d36c37b2a20ab6fd",
+      "executable_ast_except_imports_equal": true,
+      "diff": "--- model_baseline.py\n+++ src/ha_paano/_reference/model_baseline.py\n@@ -2,7 +2,7 @@\n import torch\n import torch.nn as nn\n import torch.nn.functional as F \n-from utils.utils import RevIN1d\n+from .utils.utils import RevIN1d\n \n class PatchEncoder(nn.Module): #Simple 1D CNN with RevIN\n     def __init__(self, in_channels=1, projection_dim=256, layers=[128, 256, 128, 64],\n"
+    },
+    {
+      "source": "model_FINAL_HA_PaAno.py",
+      "source_sha256": "a6248ec0357d18ffea2c1c8fb20b2480d950c59994e2d3b918193e8be6cfb646",
+      "candidate": "src/ha_paano/_reference/model_FINAL_HA_PaAno.py",
+      "candidate_sha256": "2ba3b58517c6f5748586cb299befaeb2292e17e1f7a325997517fe75cc9211a5",
+      "executable_ast_except_imports_equal": true,
+      "diff": "--- model_FINAL_HA_PaAno.py\n+++ src/ha_paano/_reference/model_FINAL_HA_PaAno.py\n@@ -2,7 +2,7 @@\n import math\n import torch\n import torch.nn as nn\n-from utils.utils import RevIN1d\n+from .utils.utils import RevIN1d\n \n \n class DualPoolingEmbeddingHead(nn.Module):\n"
+    },
+    {
+      "source": "model_FINAL_HA_PaAno_CANONICAL.py",
+      "source_sha256": "6c8c20fb059f6edb83aa423d22edae89b538c871b70711d57958ad9af4d1c5d7",
+      "candidate": "src/ha_paano/_reference/model_FINAL_HA_PaAno_CANONICAL.py",
+      "candidate_sha256": "e6150cd0cdd58df8139cc76e3602f8e16eb7d05e375ad17ef77c1ccd9eae42ef",
+      "executable_ast_except_imports_equal": true,
+      "diff": "--- model_FINAL_HA_PaAno_CANONICAL.py\n+++ src/ha_paano/_reference/model_FINAL_HA_PaAno_CANONICAL.py\n@@ -18,7 +18,7 @@\n import torch\n import torch.nn as nn\n \n-from model_FINAL_HA_PaAno import PatchEncoder as SharedHAPaAnoPatchEncoder\n+from .model_FINAL_HA_PaAno import PatchEncoder as SharedHAPaAnoPatchEncoder\n \n \n class FinalChannelActivityContext(nn.Module):\n"
+    },
+    {
+      "source": "train_FINAL_U_branch.py",
+      "source_sha256": "9dffd0109ebad1ca2344f990edc81e668652ed91ba4de989b7a3a6ebd4b63048",
+      "candidate": "src/ha_paano/_reference/train_FINAL_U_branch.py",
+      "candidate_sha256": "31cc737d28a59c2dfd91d870e0446644c0a8f5a5136006d4e243a07bb38e0d1e",
+      "executable_ast_except_imports_equal": true,
+      "diff": "--- train_FINAL_U_branch.py\n+++ src/ha_paano/_reference/train_FINAL_U_branch.py\n@@ -2,7 +2,7 @@\n from tqdm import tqdm\n import torch\n import torch.nn.functional as F\n-from utils.utils import *\n+from .utils.utils import *\n \n \n def _shift_1d_batch(x, max_shift=2):\n"
+    },
+    {
+      "source": "train_FINAL_M_branch.py",
+      "source_sha256": "f3b5a0708ffef0f20ee4c1b817d26216cb525b1c14cfada2e09166ee865b94d8",
+      "candidate": "src/ha_paano/_reference/train_FINAL_M_branch.py",
+      "candidate_sha256": "788dc93a12bc80381d08c3410dfdedb5d48637a4e762eed2b1a21058b37a3509",
+      "executable_ast_except_imports_equal": true,
+      "diff": "--- train_FINAL_M_branch.py\n+++ src/ha_paano/_reference/train_FINAL_M_branch.py\n@@ -6,7 +6,7 @@\n import random\n import matplotlib.pyplot as plt\n from sklearn.metrics import confusion_matrix, precision_score, recall_score\n-from utils.utils import *\n+from .utils.utils import *\n \n \n def train_model(model, train_loader, train_patches, device, num_iter=200, pretext_step=64,\n"
+    },
+    {
+      "source": "internal_ablation_seed2000/models/cac_variants.py",
+      "source_sha256": "01065eb9f2c9662effcd88f5b350b70d1034c1820bc056f98ed8aa130468649f",
+      "candidate": "src/ha_paano/_reference/cac_variants.py",
+      "candidate_sha256": "e0f44dc197f2a4b5de36069a9ee0f4605d53be87d60ca9438d01c89084dc3ae9",
+      "executable_ast_except_imports_equal": true,
+      "diff": "--- internal_ablation_seed2000/models/cac_variants.py\n+++ src/ha_paano/_reference/cac_variants.py\n@@ -13,7 +13,7 @@\n import torch\n import torch.nn as nn\n \n-from model_FINAL_HA_PaAno import PatchEncoder as FormalPatchEncoder\n+from .model_FINAL_HA_PaAno import PatchEncoder as FormalPatchEncoder\n \n \n VALID_VARIANTS = {\n"
+    },
+    {
+      "source": "revision_experiments/cross_branch_full_pilot_3seed/scripts/cross_branch_model.py",
+      "source_sha256": "72c9a73a49a323a31f8956909014a8a19fd179ef8f33fc4be6b56e40c1e6aeab",
+      "candidate": "src/ha_paano/_reference/cross_branch_model.py",
+      "candidate_sha256": "475c987a35380be68c5c41cfe09279a4b229a0847756e2c234d1f37db162510f",
+      "executable_ast_except_imports_equal": true,
+      "diff": "--- revision_experiments/cross_branch_full_pilot_3seed/scripts/cross_branch_model.py\n+++ src/ha_paano/_reference/cross_branch_model.py\n@@ -13,9 +13,9 @@\n \n import torch\n \n-from model_baseline import PatchEncoder as BaselinePatchEncoder\n-from model_FINAL_HA_PaAno import DualPoolingEmbeddingHead\n-from model_FINAL_HA_PaAno_CANONICAL import FinalChannelActivityContext\n+from .model_baseline import PatchEncoder as BaselinePatchEncoder\n+from .model_FINAL_HA_PaAno import DualPoolingEmbeddingHead\n+from .model_FINAL_HA_PaAno_CANONICAL import FinalChannelActivityContext\n \n \n CONDITIONS = {\n"
+    },
+    {
+      "source": "revision_experiments/cross_branch_full_pilot_3seed/scripts/cross_branch_train.py",
+      "source_sha256": "7fe71058da5a4b8c468935181fdb04a1e8ca25bf70d67d265c845446e733bad9",
+      "candidate": "src/ha_paano/_reference/cross_branch_train.py",
+      "candidate_sha256": "4aeae53f5e6baa45226308eb16560b2203a5d2fc002a4fa77c4a609ccfa919d0",
+      "executable_ast_except_imports_equal": true,
+      "diff": "--- revision_experiments/cross_branch_full_pilot_3seed/scripts/cross_branch_train.py\n+++ src/ha_paano/_reference/cross_branch_train.py\n@@ -13,8 +13,8 @@\n \n import torch\n \n-import train_FINAL_U_branch as _formal_train\n-from revision_experiments.module_hyperparameter_sensitivity.scripts import sensitivity_train_u\n+from . import train_FINAL_U_branch as _formal_train\n+from . import sensitivity_train_u\n \n \n LAST_DEBUG: dict[str, object] = {}\n"
+    },
+    {
+      "source": "revision_experiments/module_hyperparameter_sensitivity/scripts/sensitivity_train_u.py",
+      "source_sha256": "0b0aecc137784d716e346205cde91bf30c68b9b592e55490dcc723fd8a2fb5d4",
+      "candidate": "src/ha_paano/_reference/sensitivity_train_u.py",
+      "candidate_sha256": "1e0c2e05ca4f87a2e3d532594a0af009dacb2aa9a009daa959d3e7d1c6bc4742",
+      "executable_ast_except_imports_equal": true,
+      "diff": "--- revision_experiments/module_hyperparameter_sensitivity/scripts/sensitivity_train_u.py\n+++ src/ha_paano/_reference/sensitivity_train_u.py\n@@ -11,7 +11,7 @@\n \n import torch\n \n-import train_FINAL_U_branch as _formal_train\n+from . import train_FINAL_U_branch as _formal_train\n \n \n LAST_DEBUG: dict[str, object] = {}\n"
+    },
+    {
+      "source": "utils/utils.py",
+      "source_sha256": "a5a4f0043c6cf01376a1ff81d2f1aa27104b1ef099b3634dd49fc23f467e0b04",
+      "candidate": "src/ha_paano/_reference/utils/utils.py",
+      "candidate_sha256": "5d2b3ee824137781140bbc8362fe5353dce37812f4fb127c64e84929091353bc",
+      "executable_ast_except_imports_equal": true,
+      "diff": ""
+    },
+    {
+      "source": "utils/evaluation.py",
+      "source_sha256": "5b9f002b6a8cd7423acee5173a1d433790dd8d7e4dde4a50fdc34ec6e1917412",
+      "candidate": "src/ha_paano/_reference/utils/evaluation.py",
+      "candidate_sha256": "2729f105d1c292a19773025d6d60a5eec5ec7939e5ed2ed933e6ed1bdfb62956",
+      "executable_ast_except_imports_equal": true,
+      "diff": ""
+    },
+    {
+      "source": "utils/data_preprocess.py",
+      "source_sha256": "767cff9e1c39aa52602738fe4932a014bd746286950072f18b172a44537ce08c",
+      "candidate": "src/ha_paano/_reference/utils/data_preprocess.py",
+      "candidate_sha256": "3824e3eaba9b61effeb641a42a90b152abf7ea9e4e4520461e2b2d912ac2bcef",
+      "executable_ast_except_imports_equal": true,
+      "diff": "--- utils/data_preprocess.py\n+++ src/ha_paano/_reference/utils/data_preprocess.py\n@@ -155,7 +155,6 @@\n     # plt.xlabel('Lags')\n     # plt.ylabel('Autocorrelation')\n     # plt.title('Autocorrelation Function (ACF)')\n-# [private commented path omitted from public diff]\n \n     local_max = argrelextrema(auto_corr, np.greater)[0]\n \n",
+      "diff_redaction": "Deleted private commented path only; full original retained in excluded local fixture"
+    },
+    {
+      "source": "utils/metrics.py",
+      "source_sha256": "d2e5271d618557c1c9ddc54a6c9477c9cc3fc446a6efac75f0b841e76ddf08ec",
+      "candidate": "src/ha_paano/_reference/utils/metrics.py",
+      "candidate_sha256": "bebcda215e8571c9dc4a854ab1cfd0b1f89d3babc064cb2849c2850b5e0b0179",
+      "executable_ast_except_imports_equal": true,
+      "diff": ""
+    },
+    {
+      "source": "utils/basic_metrics.py",
+      "source_sha256": "9cc6ea13965d3de0d770a55f12eee34ad350b2d8cca5b786a17da4c9d6d51a85",
+      "candidate": "src/ha_paano/_reference/utils/basic_metrics.py",
+      "candidate_sha256": "5e0eb93e1cd1f03cffb31afd0f5679d3577dfa9e9d1caa929ef0a9a73dd9a88f",
+      "executable_ast_except_imports_equal": true,
+      "diff": "--- utils/basic_metrics.py\n+++ src/ha_paano/_reference/utils/basic_metrics.py\n@@ -223,8 +223,8 @@\n         return F1\n \n     def metric_Affiliation(self, label, score, preds=None):\n-        from affiliation.generics import convert_vector_to_events\n-        from affiliation.metrics import pr_from_events\n+        from ..affiliation.generics import convert_vector_to_events\n+        from ..affiliation.metrics import pr_from_events\n \n         if preds is None:\n             thresholds = np.linspace(score.min(), score.max(), 100)\n"
+    },
+    {
+      "source": "utils/result_saver.py",
+      "source_sha256": "244f01232e1da449be19f35ab1118a862eb8dec724f92e46925e7e94bc380271",
+      "candidate": "src/ha_paano/_reference/utils/result_saver.py",
+      "candidate_sha256": "d5448a79fa8d7bbfa8c3157d582ab00fa0b6b84b3ff1c9564f69795ee1c336cd",
+      "executable_ast_except_imports_equal": true,
+      "diff": ""
+    },
+    {
+      "source": "utils/cac_activity_logger.py",
+      "source_sha256": "849bca5fcf448926c22fab0ca46f0b797b5c7cd6367e9f415f9e51183d7606f5",
+      "candidate": "src/ha_paano/_reference/utils/cac_activity_logger.py",
+      "candidate_sha256": "9f9fb570d9c717a3b0f33355e400f52340e80ccc81f4b746fcf625606ecd5002",
+      "executable_ast_except_imports_equal": true,
+      "diff": ""
+    },
+    {
+      "source": "affiliation/generics.py",
+      "source_sha256": "70142fb2fe402d9e105173f67e3ed02c4a2f46e535660c0b276955a37e2cdabc",
+      "candidate": "src/ha_paano/_reference/affiliation/generics.py",
+      "candidate_sha256": "16743b204d24feb8ba9deaabceb7b0cf900520136e8a3b77e499448fcaafbfc9",
+      "executable_ast_except_imports_equal": true,
+      "diff": ""
+    },
+    {
+      "source": "affiliation/metrics.py",
+      "source_sha256": "80de2a4610d63bad1276e0eca1e59fb54a74ebbda0480029ff81b24b4356d460",
+      "candidate": "src/ha_paano/_reference/affiliation/metrics.py",
+      "candidate_sha256": "f1a397b3c552f8d7cba66913d483d882bc663f148098bdf6327dbb6b42409277",
+      "executable_ast_except_imports_equal": true,
+      "diff": ""
+    },
+    {
+      "source": "affiliation/_affiliation_zone.py",
+      "source_sha256": "c017dd0d9950724d56e9f89d491439360d2cd4942138e00c09ed275de778b9fa",
+      "candidate": "src/ha_paano/_reference/affiliation/_affiliation_zone.py",
+      "candidate_sha256": "3b289bf11cebe614afabe353c873de90ba9debf8831aef8f73532870dce01ba2",
+      "executable_ast_except_imports_equal": true,
+      "diff": ""
+    },
+    {
+      "source": "affiliation/_integral_interval.py",
+      "source_sha256": "72f9ca62f0c37bb1b15a52f6c54020efe6bec98d5dec99f8b72d680545331268",
+      "candidate": "src/ha_paano/_reference/affiliation/_integral_interval.py",
+      "candidate_sha256": "8177e69eccb0ae4ea76b2f54f6799ae61758b5a103603fae3d1a3a8d331e7cda",
+      "executable_ast_except_imports_equal": true,
+      "diff": ""
+    },
+    {
+      "source": "affiliation/_single_ground_truth_event.py",
+      "source_sha256": "c4fbf96df032bcd7711886d655b2a31be15148e29005ead51625554d098c542f",
+      "candidate": "src/ha_paano/_reference/affiliation/_single_ground_truth_event.py",
+      "candidate_sha256": "a04b5daa0fb0ef68893807c7ab5d4353b43f0d5231ae06ef0006b2e6cf939165",
+      "executable_ast_except_imports_equal": true,
+      "diff": ""
+    },
+    {
+      "source": "LICENSE",
+      "source_sha256": "fbbef470d59892ba72b14478d728eec3b78eacaab57d452324e2b138244b6fec",
+      "candidate": "licenses/PaAno-MIT.txt",
+      "candidate_sha256": "fbbef470d59892ba72b14478d728eec3b78eacaab57d452324e2b138244b6fec",
+      "byte_identical": true
+    },
+    {
+      "source": "paper/submission_extension/vendor/TSB-AD/LICENSE",
+      "source_sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6",
+      "candidate": "licenses/TSB-AD-Apache-2.0.txt",
+      "candidate_sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6",
+      "byte_identical": true
+    },
+    {
+      "source": "requirements.txt",
+      "source_sha256": "caa130e9f4346d88526fa994a17e1800a0c7a763c1cad452c06b0ee2978a68e0",
+      "candidate": "requirements.txt",
+      "candidate_sha256": "caa130e9f4346d88526fa994a17e1800a0c7a763c1cad452c06b0ee2978a68e0",
+      "byte_identical": true
+    }
+  ]
+}

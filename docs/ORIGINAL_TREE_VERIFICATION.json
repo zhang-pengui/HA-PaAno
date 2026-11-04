@@ -1,0 +1,13 @@
+{
+  "before_files": 164148,
+  "after_files": 164148,
+  "git_state_equal": true,
+  "selected_hashes_before": 18386,
+  "selected_hashes_after": 18386,
+  "added_count": 0,
+  "removed_count": 0,
+  "metadata_changed_count": 0,
+  "selected_hashes_changed_count": 0,
+  "status": "PASS",
+  "scope": "All file paths, sizes and mtimes; selected source/config/license/summary SHA256; source Git HEAD, branch, status, diff stats and index hash. Not a full-byte hash of all large signals/results."
+}

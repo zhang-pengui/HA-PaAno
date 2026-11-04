@@ -1,0 +1,337 @@
+{
+  "revision": "R2_public_candidate_20261104",
+  "date": "2026-11-04",
+  "previous_snapshot": {
+    "path": "docs/history/pre_r2_20261104/VALIDATION_RESULTS.json",
+    "sha256": "749bf0a9ff07636ee7c0b14d597284c0d01c69f42c8fb2bc292d0fe25cf7b1e1"
+  },
+  "prior_checks": {
+    "checks": [
+      {
+        "name": "U_reference_candidate_CPU_equivalence",
+        "status": "PASS",
+        "exact_hash_or_value_equality": true,
+        "compared_fields": [
+          "track",
+          "initial_parameters",
+          "forward",
+          "loss_observations",
+          "gradients",
+          "updates",
+          "optimizer_states",
+          "final_parameters",
+          "torch_rng",
+          "python_rng",
+          "numpy_rng",
+          "patch_scores",
+          "point_scores",
+          "metrics",
+          "optimizer_steps",
+          "cuda_initialized"
+        ],
+        "optimizer_steps": 6,
+        "cuda_initialized": false
+      },
+      {
+        "name": "M_reference_candidate_CPU_equivalence",
+        "status": "PASS",
+        "exact_hash_or_value_equality": true,
+        "compared_fields": [
+          "track",
+          "initial_parameters",
+          "forward",
+          "loss_observations",
+          "gradients",
+          "updates",
+          "optimizer_states",
+          "final_parameters",
+          "torch_rng",
+          "python_rng",
+          "numpy_rng",
+          "patch_scores",
+          "point_scores",
+          "metrics",
+          "optimizer_steps",
+          "cuda_initialized"
+        ],
+        "optimizer_steps": 6,
+        "cuda_initialized": false
+      },
+      {
+        "name": "syntax",
+        "status": "PASS",
+        "file_count": 32
+      },
+      {
+        "name": "copied_source_hashes",
+        "status": "PASS",
+        "record_count": 25
+      },
+      {
+        "name": "U_formal_CLI_dry_run",
+        "status": "PASS",
+        "series": 350,
+        "writes": 0,
+        "training_started": false
+      },
+      {
+        "name": "M_formal_CLI_dry_run",
+        "status": "PASS",
+        "series": 180,
+        "writes": 0,
+        "training_started": false
+      },
+      {
+        "name": "U_joint_fit_score_evaluate_save",
+        "status": "PASS",
+        "synthetic_points": 512,
+        "num_iters": 6,
+        "batch_size": 8,
+        "paper_result": false
+      },
+      {
+        "name": "M_joint_fit_score_evaluate_save",
+        "status": "PASS",
+        "synthetic_points": 512,
+        "num_iters": 6,
+        "batch_size": 8,
+        "paper_result": false
+      },
+      {
+        "name": "public_unit_tests",
+        "status": "PASS",
+        "tests": 11,
+        "full_experiment": false,
+        "command": "python -B -X utf8 -m unittest discover -s tests -v"
+      }
+    ],
+    "training_scope": "synthetic CPU only; six optimizer steps per probe",
+    "gpu_training_started": false,
+    "all_passed": true
+  },
+  "code_bundle_sha256": "c3fa869b7f9465194c5e90bbb4c32964bdb16c1a83af3d1b6aca489eac14cd15",
+  "environment": {
+    "python": "3.11.15",
+    "torch": "2.7.1+cu128",
+    "device": "CPU",
+    "torch_threads_for_tests": 1,
+    "cuda_initialized": false,
+    "new_packages_installed": false
+  },
+  "current_checks": {
+    "unit_tests": {
+      "returncode": 0,
+      "seconds": 54.91210020001745,
+      "tests": 18,
+      "original_tests": 11,
+      "r2_tests": 7,
+      "isolated_route_probes": 17,
+      "all_passed": true
+    },
+    "frozen_source_cpu_comparison": {
+      "results": [
+        {
+          "case": "U_B",
+          "status": "PASS",
+          "mismatches": [],
+          "compared_fields": 25,
+          "optimizer_steps": 6,
+          "cuda_initialized": false
+        },
+        {
+          "case": "U_J",
+          "status": "PASS",
+          "mismatches": [],
+          "compared_fields": 25,
+          "optimizer_steps": 6,
+          "cuda_initialized": false
+        },
+        {
+          "case": "U_L",
+          "status": "PASS",
+          "mismatches": [],
+          "compared_fields": 25,
+          "optimizer_steps": 6,
+          "cuda_initialized": false
+        },
+        {
+          "case": "U_C",
+          "status": "PASS",
+          "mismatches": [],
+          "compared_fields": 25,
+          "optimizer_steps": 6,
+          "cuda_initialized": false
+        },
+        {
+          "case": "U_JL",
+          "status": "PASS",
+          "mismatches": [],
+          "compared_fields": 25,
+          "optimizer_steps": 6,
+          "cuda_initialized": false
+        },
+        {
+          "case": "U_JC",
+          "status": "PASS",
+          "mismatches": [],
+          "compared_fields": 25,
+          "optimizer_steps": 6,
+          "cuda_initialized": false
+        },
+        {
+          "case": "U_LC",
+          "status": "PASS",
+          "mismatches": [],
+          "compared_fields": 25,
+          "optimizer_steps": 6,
+          "cuda_initialized": false
+        },
+        {
+          "case": "U_JLC",
+          "status": "PASS",
+          "mismatches": [],
+          "compared_fields": 25,
+          "optimizer_steps": 6,
+          "cuda_initialized": false
+        },
+        {
+          "case": "M_B",
+          "status": "PASS",
+          "mismatches": [],
+          "compared_fields": 25,
+          "optimizer_steps": 6,
+          "cuda_initialized": false
+        },
+        {
+          "case": "M_J",
+          "status": "PASS",
+          "mismatches": [],
+          "compared_fields": 25,
+          "optimizer_steps": 6,
+          "cuda_initialized": false
+        },
+        {
+          "case": "M_L",
+          "status": "PASS",
+          "mismatches": [],
+          "compared_fields": 25,
+          "optimizer_steps": 6,
+          "cuda_initialized": false
+        },
+        {
+          "case": "M_C",
+          "status": "PASS",
+          "mismatches": [],
+          "compared_fields": 25,
+          "optimizer_steps": 6,
+          "cuda_initialized": false
+        },
+        {
+          "case": "M_JL",
+          "status": "PASS",
+          "mismatches": [],
+          "compared_fields": 25,
+          "optimizer_steps": 6,
+          "cuda_initialized": false
+        },
+        {
+          "case": "M_JC",
+          "status": "PASS",
+          "mismatches": [],
+          "compared_fields": 25,
+          "optimizer_steps": 6,
+          "cuda_initialized": false
+        },
+        {
+          "case": "M_LC",
+          "status": "PASS",
+          "mismatches": [],
+          "compared_fields": 25,
+          "optimizer_steps": 6,
+          "cuda_initialized": false
+        },
+        {
+          "case": "M_JLC",
+          "status": "PASS",
+          "mismatches": [],
+          "compared_fields": 25,
+          "optimizer_steps": 6,
+          "cuda_initialized": false
+        },
+        {
+          "case": "M_C_MEAN_ONLY",
+          "status": "PASS",
+          "mismatches": [],
+          "compared_fields": 27,
+          "optimizer_steps": 6,
+          "cuda_initialized": false
+        }
+      ],
+      "all_passed": true,
+      "scope": "seed2000, synthetic U(C1)/M(C3), six iterations with batch4; not formal CUDA reproduction"
+    },
+    "dry_runs": {
+      "jobs": 54,
+      "tuning_jobs": 51,
+      "tuning_fits": 1692,
+      "eva_jobs": 3,
+      "eva_fits": 540,
+      "all_passed": true,
+      "full_members_bytes_and_sha256_checked": true,
+      "torch_imported": false,
+      "output_created": false,
+      "training_started": false
+    },
+    "runner_smokes": [
+      {
+        "track": "U",
+        "condition": "JLC",
+        "status": "PASS",
+        "cpu_checkpoint_readback": true,
+        "complete_hashes_valid": true,
+        "score_label_length": 512,
+        "iterations": 6,
+        "batch": 4,
+        "cuda_initialized": false,
+        "scope": "synthetic input and test-only manifest/trainer injection; never benchmark evidence"
+      },
+      {
+        "track": "M",
+        "condition": "MEAN_ONLY",
+        "status": "PASS",
+        "cpu_checkpoint_readback": true,
+        "complete_hashes_valid": true,
+        "score_label_length": 512,
+        "iterations": 6,
+        "batch": 4,
+        "cuda_initialized": false,
+        "scope": "synthetic input and test-only manifest/trainer injection; never benchmark evidence"
+      }
+    ],
+    "syntax": {
+      "python": 43,
+      "json": 17,
+      "errors": []
+    },
+    "original_final_unchanged": {
+      "files": 35,
+      "changed": []
+    },
+    "package_imports": {
+      "count": 37,
+      "all_passed": true
+    },
+    "requirements": {
+      "direct_packages": 8,
+      "all_installed_and_versions_match": true
+    }
+  },
+  "unverified": [
+    "Clean environment installation",
+    "Full100step/batch512 real-data CUDA reproduction",
+    "Complete1692/540fit reruns",
+    "Other devices,seeds and channel counts outside the specified CPU probes",
+    "Production resume/resource guard, not provided by this public runner",
+    "RevIN authorization-specific additional conditions, maintainer review gate"
+  ]
+}

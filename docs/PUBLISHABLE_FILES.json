@@ -1,0 +1,732 @@
+{
+  "schema_version": 2,
+  "revision": "R2_public_candidate_20261104",
+  "publishable_file_count": 79,
+  "files": [
+    {
+      "path": ".gitignore",
+      "size": 452,
+      "sha256": "c05fa7b1d9d8d391e7aad13723ad1f71185a4c4cfac55ad437280106429cfd26",
+      "purpose": "Exclude private evidence, data, checkpoints, caches and generated outputs",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "Static/scope/noticechecksPASS"
+    },
+    {
+      "path": "CITATION.cff",
+      "size": 550,
+      "sha256": "9b4e264055062278145a24f3a70ea0266dea858a5d7da6d7107940bb5c800b0c",
+      "purpose": "Software author/citation metadata; no invented publication details",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "Source/evidence/document/staticchecks;historicalscopewhereindicated"
+    },
+    {
+      "path": "LICENSE",
+      "size": 1265,
+      "sha256": "fbf8fc6d85428d1bae33e565bbaa06a1f0dda3506bfc60840771db5ed026407a",
+      "purpose": "Copyright/license/third-party provenance",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "Static/scope/noticechecksPASS"
+    },
+    {
+      "path": "README.md",
+      "size": 13601,
+      "sha256": "ddeab0618c3afd2078778aba923aa0942cda7442e1ca984cc91e0c98811bdc33",
+      "purpose": "Public documentation or reproducibility metadata",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "Source/evidence/document/staticchecks;historicalscopewhereindicated"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "size": 4147,
+      "sha256": "7828e56d957b39d1f4f361a0a6151dd5db6e474c09a536d2e57b0f3fb8c653d3",
+      "purpose": "Copyright/license/third-party provenance",
+      "license_or_origin": "Third-party notices remain applicable;not blanket relicensing",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "Static/scope/noticechecksPASS"
+    },
+    {
+      "path": "configs/evaluation_M.json",
+      "size": 9512,
+      "sha256": "de5cb89096385b65f711375c6252e6c57e3f0d353a4c3de67fbe5812b72396f0",
+      "purpose": "Original final pathway/350U180Mfilename identity, unchanged",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Static/scope/noticechecksPASS"
+    },
+    {
+      "path": "configs/evaluation_U.json",
+      "size": 18798,
+      "sha256": "294774939a98f9825cc3d730915417913fb3823d2512a4acfdd7d6b6c68f5475",
+      "purpose": "Original final pathway/350U180Mfilename identity, unchanged",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Static/scope/noticechecksPASS"
+    },
+    {
+      "path": "configs/final_M.json",
+      "size": 687,
+      "sha256": "5b6c66b3a34d0c7fa5fe318f5f0a4316b74be9a586745343a3d4270f31ab9334",
+      "purpose": "Original final pathway/350U180Mfilename identity, unchanged",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Static/scope/noticechecksPASS"
+    },
+    {
+      "path": "configs/final_U.json",
+      "size": 711,
+      "sha256": "03ee0441420de777d3f904ddbcc7e46a8f441215c2980ab452ed9b8640932cd5",
+      "purpose": "Original final pathway/350U180Mfilename identity, unchanged",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Static/scope/noticechecksPASS"
+    },
+    {
+      "path": "configs/r2_eva_execution.json",
+      "size": 1703,
+      "sha256": "948341ef787fe1349ea7a19ba33fded72ca0a80a8bbefebd48ca2c315521eb15",
+      "purpose": "Frozen R2 scientific/member/thread identity; no signal values",
+      "license_or_origin": "Original sanitized identifier/hash compilation/packaging;MIT within author entitlement;no dataset rights transfer",
+      "scientific_identity": "A_HISTORICAL_PATHS_NOT_UNIFIED_RNG",
+      "verification_status": "SHA-pinned;54actualdryrunsPASS"
+    },
+    {
+      "path": "configs/r2_evaluation_M.json",
+      "size": 62725,
+      "sha256": "e9764924ef7886518210b2288fc1ef8f87e622b906e3f0a43c1c0085ba131641",
+      "purpose": "Frozen R2 scientific/member/thread identity; no signal values",
+      "license_or_origin": "Original sanitized identifier/hash compilation/packaging;MIT within author entitlement;no dataset rights transfer",
+      "scientific_identity": "A_HISTORICAL_PATHS_NOT_UNIFIED_RNG",
+      "verification_status": "SHA-pinned;54actualdryrunsPASS"
+    },
+    {
+      "path": "configs/r2_protocol.json",
+      "size": 2607,
+      "sha256": "44300fb4a6d00ad6d886c234ac528cb3d1db9de099d9a8b3ee3fcde26f5f943f",
+      "purpose": "Frozen R2 scientific/member/thread identity; no signal values",
+      "license_or_origin": "Original sanitized identifier/hash compilation/packaging;MIT within author entitlement;no dataset rights transfer",
+      "scientific_identity": "A_HISTORICAL_PATHS_NOT_UNIFIED_RNG",
+      "verification_status": "SHA-pinned;54actualdryrunsPASS"
+    },
+    {
+      "path": "configs/r2_tuning_M.json",
+      "size": 5815,
+      "sha256": "e710623c1884e172fc1715495fc69fdc07b5216a0f06b7cefb0c1876584d8444",
+      "purpose": "Frozen R2 scientific/member/thread identity; no signal values",
+      "license_or_origin": "Original sanitized identifier/hash compilation/packaging;MIT within author entitlement;no dataset rights transfer",
+      "scientific_identity": "A_HISTORICAL_PATHS_NOT_UNIFIED_RNG",
+      "verification_status": "SHA-pinned;54actualdryrunsPASS"
+    },
+    {
+      "path": "configs/r2_tuning_U.json",
+      "size": 13355,
+      "sha256": "3490f2d159d5768565a00a65a1b4a02500bd78affcf85073e4d083b75554b668",
+      "purpose": "Frozen R2 scientific/member/thread identity; no signal values",
+      "license_or_origin": "Original sanitized identifier/hash compilation/packaging;MIT within author entitlement;no dataset rights transfer",
+      "scientific_identity": "A_HISTORICAL_PATHS_NOT_UNIFIED_RNG",
+      "verification_status": "SHA-pinned;54actualdryrunsPASS"
+    },
+    {
+      "path": "docs/CODE_MAP.md",
+      "size": 4870,
+      "sha256": "ae693813fbfb2b55e45a45360f43dab2eaecf37d4435770b096e2592094a3913",
+      "purpose": "Public documentation or reproducibility metadata",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "Source/evidence/document/staticchecks;historicalscopewhereindicated"
+    },
+    {
+      "path": "docs/DATA_PREPARATION.md",
+      "size": 3134,
+      "sha256": "d6c273829fd40068214a99bd55ce9b1bc91e135157efc7f5ac2cbc547ca8634d",
+      "purpose": "Public documentation or reproducibility metadata",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "Source/evidence/document/staticchecks;historicalscopewhereindicated"
+    },
+    {
+      "path": "docs/FILE_SELECTION_PLAN.md",
+      "size": 2185,
+      "sha256": "517cc714fd7fb5d4a40202240b3cd0d15779bc79548c5dceb5080c11b6c186d1",
+      "purpose": "Public documentation or reproducibility metadata",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "Source/evidence/document/staticchecks;historicalscopewhereindicated"
+    },
+    {
+      "path": "docs/INSTALLATION.md",
+      "size": 2383,
+      "sha256": "16bf2e3d00f7d8f4b35e4eebd0dbcad8c92c237948d365091f3a35b49769a1ff",
+      "purpose": "Public documentation or reproducibility metadata",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "Source/evidence/document/staticchecks;historicalscopewhereindicated"
+    },
+    {
+      "path": "docs/ORIGINAL_TREE_VERIFICATION.json",
+      "size": 500,
+      "sha256": "8599fbc2975373292ae6336f83e38b2507bf05f115d9a6f527819aff3cc2ace5",
+      "purpose": "Public documentation or reproducibility metadata",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "Source/evidence/document/staticchecks;historicalscopewhereindicated"
+    },
+    {
+      "path": "docs/RELEASE_AUDIT.md",
+      "size": 7501,
+      "sha256": "4ce7604b549a6dd4fde2bdf7abfa616f6cc61b6170fd60e0db26163d95ac9fe3",
+      "purpose": "Public documentation or reproducibility metadata",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "Source/evidence/document/staticchecks;historicalscopewhereindicated"
+    },
+    {
+      "path": "docs/RELEASE_CHECKLIST.md",
+      "size": 3645,
+      "sha256": "21e666a8b3ecbdcf36be53992cd9bcb478eb7a2e0bb2377118c545a9bb447710",
+      "purpose": "Public documentation or reproducibility metadata",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "Source/evidence/document/staticchecks;historicalscopewhereindicated"
+    },
+    {
+      "path": "docs/RELEASE_REPORT.md",
+      "size": 10033,
+      "sha256": "079e0f7730744a0e7275e8df1b07568c3647a9261ab8c7cc8f2ef66a56b2ffdf",
+      "purpose": "Public documentation or reproducibility metadata",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "Source/evidence/document/staticchecks;historicalscopewhereindicated"
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "size": 6362,
+      "sha256": "cb806978e76477855f199d6a971f7d5222cb6b5838a6a3b94419dea41fa777b2",
+      "purpose": "Public documentation or reproducibility metadata",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "Source/evidence/document/staticchecks;historicalscopewhereindicated"
+    },
+    {
+      "path": "docs/SAFETY_VERIFICATION.json",
+      "size": 1233,
+      "sha256": "a1738df15013bfb2addf5ea0d82aa386ecfd8e04900b83e296ffdd4d98f13187",
+      "purpose": "Public documentation or reproducibility metadata",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "Source/evidence/document/staticchecks;historicalscopewhereindicated"
+    },
+    {
+      "path": "docs/SOURCE_PROVENANCE.json",
+      "size": 22735,
+      "sha256": "0d157f4c489bc90da6cab88f3d2d46404d59e059a0c0dce05bc565cde4fa09e6",
+      "purpose": "Public documentation or reproducibility metadata",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "Source/evidence/document/staticchecks;historicalscopewhereindicated"
+    },
+    {
+      "path": "docs/VALIDATION_RESULTS.json",
+      "size": 9291,
+      "sha256": "48842ea516a7409af71b88d0ea7c5a62269320957ba16cfbaa0a20679022b49a",
+      "purpose": "Public documentation or reproducibility metadata",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "Source/evidence/document/staticchecks;historicalscopewhereindicated"
+    },
+    {
+      "path": "docs/history/pre_r2_20261104/PUBLISHABLE_FILES.json",
+      "size": 10200,
+      "sha256": "d7098c88198d042f419dd4c10a7c0254124305c58817436cd59ad6675eeb793b",
+      "purpose": "Byte-exact pre-R2 metadata/audit preservation; historical scope only",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "Source/evidence/document/staticchecks;historicalscopewhereindicated"
+    },
+    {
+      "path": "docs/history/pre_r2_20261104/RELEASE_AUDIT.md",
+      "size": 7182,
+      "sha256": "b82f0259b81e8fd9668ece853c6d3d1c1ed2e052440d16bc1026a6c50d061635",
+      "purpose": "Byte-exact pre-R2 metadata/audit preservation; historical scope only",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "Source/evidence/document/staticchecks;historicalscopewhereindicated"
+    },
+    {
+      "path": "docs/history/pre_r2_20261104/SOURCE_PROVENANCE.json",
+      "size": 15101,
+      "sha256": "5b4d8bd2c040252c9205f2184872d385e05b7d16d73c777e7972a8375298997d",
+      "purpose": "Byte-exact pre-R2 metadata/audit preservation; historical scope only",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "Source/evidence/document/staticchecks;historicalscopewhereindicated"
+    },
+    {
+      "path": "docs/history/pre_r2_20261104/VALIDATION_RESULTS.json",
+      "size": 2520,
+      "sha256": "749bf0a9ff07636ee7c0b14d597284c0d01c69f42c8fb2bc292d0fe25cf7b1e1",
+      "purpose": "Byte-exact pre-R2 metadata/audit preservation; historical scope only",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "Source/evidence/document/staticchecks;historicalscopewhereindicated"
+    },
+    {
+      "path": "licenses/PaAno-MIT.txt",
+      "size": 1085,
+      "sha256": "fbbef470d59892ba72b14478d728eec3b78eacaab57d452324e2b138244b6fec",
+      "purpose": "Copyright/license/third-party provenance",
+      "license_or_origin": "PaAno/HA-PaAno research implementation;respective MIT notices;source:LICENSE",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "Static/scope/noticechecksPASS"
+    },
+    {
+      "path": "licenses/TSB-AD-Apache-2.0.txt",
+      "size": 11558,
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6",
+      "purpose": "Copyright/license/third-party provenance",
+      "license_or_origin": "TSB-AD-derived evaluator:Apache-2.0;retain source/adaptation notices",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "Static/scope/noticechecksPASS"
+    },
+    {
+      "path": "licenses/affiliation-MIT.txt",
+      "size": 1079,
+      "sha256": "6615d2b1a87ea5b137f92f3d5cb32d70f66cc91865dbbf796a9d32d6f878c965",
+      "purpose": "Copyright/license/third-party provenance",
+      "license_or_origin": "affiliation-metrics:MIT,AlexisHuetandothers;retain notices",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "Static/scope/noticechecksPASS"
+    },
+    {
+      "path": "requirements.txt",
+      "size": 132,
+      "sha256": "caa130e9f4346d88526fa994a17e1800a0c7a763c1cad452c06b0ee2978a68e0",
+      "purpose": "Original pinned runtime dependency declarations",
+      "license_or_origin": "PaAno/HA-PaAno research implementation;respective MIT notices;source:requirements.txt",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "Static/scope/noticechecksPASS"
+    },
+    {
+      "path": "results/README.md",
+      "size": 958,
+      "sha256": "3c5736a454cb819a6975c82a69b2f3c67df940f9205a25da7a2569d4fe948d39",
+      "purpose": "Public documentation or reproducibility metadata",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "Static/scope/noticechecksPASS"
+    },
+    {
+      "path": "scripts/inspect_results.py",
+      "size": 2188,
+      "sha256": "c2bff04f6b37e55de0f0c86b51a52c2d2b29abcf594c28a7c0fc030021b4275c",
+      "purpose": "Public documentation or reproducibility metadata",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "Static/scope/noticechecksPASS"
+    },
+    {
+      "path": "scripts/run_experiment.py",
+      "size": 1399,
+      "sha256": "6063413e6c77cf0e7d56edf9a1d9d4d5f6c48ec4185b27e131172b2f68fe5b56",
+      "purpose": "Original final U-JLC/M-C entry, unchanged",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Static/scope/noticechecksPASS"
+    },
+    {
+      "path": "scripts/run_r2_experiment.py",
+      "size": 3484,
+      "sha256": "af56d01a848cdbfcc04968314d6ff1eb4889a096785314ae2cf156a0d1867421",
+      "purpose": "Independent dry-run/fresh-child R2 entry",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "NON_SCIENTIFIC_PAYLOAD",
+      "verification_status": "TargetedCPUtestsPASS;54dryruns;2isolatedsyntheticrunnerI/Ochecks"
+    },
+    {
+      "path": "src/ha_paano/__init__.py",
+      "size": 83,
+      "sha256": "bffb53962f9b886f01b2fffdfde60395f94fe6b717f363a58c4c21b41c78f4c1",
+      "purpose": "Model/trainer/scorer or required package dependency: __init__.py",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/__init__.py",
+      "size": 87,
+      "sha256": "82e1540a35e4a51889be946c5978475374be585310514ed05b61be893a2b8813",
+      "purpose": "Model/trainer/scorer or required package dependency: __init__.py",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/affiliation/__init__.py",
+      "size": 87,
+      "sha256": "82e1540a35e4a51889be946c5978475374be585310514ed05b61be893a2b8813",
+      "purpose": "Model/trainer/scorer or required package dependency: __init__.py",
+      "license_or_origin": "affiliation-metrics:MIT,AlexisHuetandothers;retain notices",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/affiliation/_affiliation_zone.py",
+      "size": 3486,
+      "sha256": "3b289bf11cebe614afabe353c873de90ba9debf8831aef8f73532870dce01ba2",
+      "purpose": "Model/trainer/scorer or required package dependency: _affiliation_zone.py",
+      "license_or_origin": "affiliation-metrics:MIT,AlexisHuetandothers;retain notices",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/affiliation/_integral_interval.py",
+      "size": 20845,
+      "sha256": "8177e69eccb0ae4ea76b2f54f6799ae61758b5a103603fae3d1a3a8d331e7cda",
+      "purpose": "Model/trainer/scorer or required package dependency: _integral_interval.py",
+      "license_or_origin": "affiliation-metrics:MIT,AlexisHuetandothers;retain notices",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/affiliation/_single_ground_truth_event.py",
+      "size": 3488,
+      "sha256": "a04b5daa0fb0ef68893807c7ab5d4353b43f0d5231ae06ef0006b2e6cf939165",
+      "purpose": "Model/trainer/scorer or required package dependency: _single_ground_truth_event.py",
+      "license_or_origin": "affiliation-metrics:MIT,AlexisHuetandothers;retain notices",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/affiliation/generics.py",
+      "size": 4882,
+      "sha256": "16743b204d24feb8ba9deaabceb7b0cf900520136e8a3b77e499448fcaafbfc9",
+      "purpose": "Model/trainer/scorer or required package dependency: generics.py",
+      "license_or_origin": "affiliation-metrics:MIT,AlexisHuetandothers;retain notices",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/affiliation/metrics.py",
+      "size": 5232,
+      "sha256": "f1a397b3c552f8d7cba66913d483d882bc663f148098bdf6327dbb6b42409277",
+      "purpose": "Model/trainer/scorer or required package dependency: metrics.py",
+      "license_or_origin": "affiliation-metrics:MIT,AlexisHuetandothers;retain notices",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/cac_variants.py",
+      "size": 5709,
+      "sha256": "e0f44dc197f2a4b5de36069a9ee0f4605d53be87d60ca9438d01c89084dc3ae9",
+      "purpose": "Model/trainer/scorer or required package dependency: cac_variants.py",
+      "license_or_origin": "PaAno/HA-PaAno research implementation;respective MIT notices;source:internal_ablation_seed2000/models/cac_variants.py",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/cross_branch_model.py",
+      "size": 7184,
+      "sha256": "475c987a35380be68c5c41cfe09279a4b229a0847756e2c234d1f37db162510f",
+      "purpose": "Model/trainer/scorer or required package dependency: cross_branch_model.py",
+      "license_or_origin": "PaAno/HA-PaAno research implementation;respective MIT notices;source:revision_experiments/cross_branch_full_pilot_3seed/scripts/cross_branch_model.py",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/cross_branch_train.py",
+      "size": 2639,
+      "sha256": "4aeae53f5e6baa45226308eb16560b2203a5d2fc002a4fa77c4a609ccfa919d0",
+      "purpose": "Model/trainer/scorer or required package dependency: cross_branch_train.py",
+      "license_or_origin": "PaAno/HA-PaAno research implementation;respective MIT notices;source:revision_experiments/cross_branch_full_pilot_3seed/scripts/cross_branch_train.py",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/factorial_model.py",
+      "size": 1164,
+      "sha256": "b2843869623e21be59e18527d2206ccee813d43cfb1bbbcb5ffacab79d1a7f11",
+      "purpose": "Model/trainer/scorer or required package dependency: factorial_model.py",
+      "license_or_origin": "PaAno/HA-PaAno research implementation;respective MIT notices;source:revision_experiments/apin_r2_formal_tuning/source_snapshot/revision_experiments/factorial_completion_1seed/scripts/factorial_model.py",
+      "scientific_identity": "A_HISTORICAL_PATHS_NOT_UNIFIED_RNG",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/model_FINAL_HA_PaAno.py",
+      "size": 10804,
+      "sha256": "2ba3b58517c6f5748586cb299befaeb2292e17e1f7a325997517fe75cc9211a5",
+      "purpose": "Model/trainer/scorer or required package dependency: model_FINAL_HA_PaAno.py",
+      "license_or_origin": "PaAno/HA-PaAno research implementation;respective MIT notices;source:model_FINAL_HA_PaAno.py",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/model_FINAL_HA_PaAno_CANONICAL.py",
+      "size": 4872,
+      "sha256": "e6150cd0cdd58df8139cc76e3602f8e16eb7d05e375ad17ef77c1ccd9eae42ef",
+      "purpose": "Model/trainer/scorer or required package dependency: model_FINAL_HA_PaAno_CANONICAL.py",
+      "license_or_origin": "PaAno/HA-PaAno research implementation;respective MIT notices;source:model_FINAL_HA_PaAno_CANONICAL.py",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/model_baseline.py",
+      "size": 2422,
+      "sha256": "62e14d0f7678c8d2589ff3498bb4f109c518357b31dae663d36c37b2a20ab6fd",
+      "purpose": "Model/trainer/scorer or required package dependency: model_baseline.py",
+      "license_or_origin": "PaAno/HA-PaAno research implementation;respective MIT notices;source:model_baseline.py",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/pipeline.py",
+      "size": 24084,
+      "sha256": "369aae7b07065c5eee49ae5eb8fa8a40f5f064b255ccf04cb7a8cbd97bed9363",
+      "purpose": "Model/trainer/scorer or required package dependency: pipeline.py",
+      "license_or_origin": "PaAno/HA-PaAno research implementation;respective MIT notices;source:main.py",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/sensitivity_model_u.py",
+      "size": 748,
+      "sha256": "875e3e2d25b88c88a705169247fd036c4461b55178eff9210592ae48e0608ded",
+      "purpose": "Model/trainer/scorer or required package dependency: sensitivity_model_u.py",
+      "license_or_origin": "PaAno/HA-PaAno research implementation;respective MIT notices;source:revision_experiments/apin_r2_formal_tuning/source_snapshot/revision_experiments/module_hyperparameter_sensitivity/scripts/sensitivity_model_u.py",
+      "scientific_identity": "A_HISTORICAL_PATHS_NOT_UNIFIED_RNG",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/sensitivity_train_u.py",
+      "size": 2100,
+      "sha256": "1e0c2e05ca4f87a2e3d532594a0af009dacb2aa9a009daa959d3e7d1c6bc4742",
+      "purpose": "Model/trainer/scorer or required package dependency: sensitivity_train_u.py",
+      "license_or_origin": "PaAno/HA-PaAno research implementation;respective MIT notices;source:revision_experiments/module_hyperparameter_sensitivity/scripts/sensitivity_train_u.py",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/train_FINAL_M_branch.py",
+      "size": 7272,
+      "sha256": "788dc93a12bc80381d08c3410dfdedb5d48637a4e762eed2b1a21058b37a3509",
+      "purpose": "Model/trainer/scorer or required package dependency: train_FINAL_M_branch.py",
+      "license_or_origin": "PaAno/HA-PaAno research implementation;respective MIT notices;source:train_FINAL_M_branch.py",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/train_FINAL_U_branch.py",
+      "size": 9579,
+      "sha256": "31cc737d28a59c2dfd91d870e0446644c0a8f5a5136006d4e243a07bb38e0d1e",
+      "purpose": "Model/trainer/scorer or required package dependency: train_FINAL_U_branch.py",
+      "license_or_origin": "PaAno/HA-PaAno research implementation;respective MIT notices;source:train_FINAL_U_branch.py",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/train_baseline.py",
+      "size": 7272,
+      "sha256": "788dc93a12bc80381d08c3410dfdedb5d48637a4e762eed2b1a21058b37a3509",
+      "purpose": "Model/trainer/scorer or required package dependency: train_baseline.py",
+      "license_or_origin": "PaAno/HA-PaAno research implementation;respective MIT notices;source:revision_experiments/apin_r2_formal_tuning/source_snapshot/train_baseline.py",
+      "scientific_identity": "A_HISTORICAL_PATHS_NOT_UNIFIED_RNG",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/urpa_transform_train.py",
+      "size": 2659,
+      "sha256": "ca33035f9cc3e5f78b61d95511e796a401a99cf13bfb3e290bbdb0f58dc048e7",
+      "purpose": "Model/trainer/scorer or required package dependency: urpa_transform_train.py",
+      "license_or_origin": "PaAno/HA-PaAno research implementation;respective MIT notices;source:revision_experiments/apin_r2_formal_tuning/source_snapshot/revision_experiments/urpa_transform_only_pilot_3seed/scripts/urpa_transform_train.py",
+      "scientific_identity": "A_HISTORICAL_PATHS_NOT_UNIFIED_RNG",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/utils/__init__.py",
+      "size": 87,
+      "sha256": "82e1540a35e4a51889be946c5978475374be585310514ed05b61be893a2b8813",
+      "purpose": "Model/trainer/scorer or required package dependency: __init__.py",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/utils/basic_metrics.py",
+      "size": 29367,
+      "sha256": "5e0eb93e1cd1f03cffb31afd0f5679d3577dfa9e9d1caa929ef0a9a73dd9a88f",
+      "purpose": "Model/trainer/scorer or required package dependency: basic_metrics.py",
+      "license_or_origin": "TSB-AD-derived evaluator:Apache-2.0;retain source/adaptation notices",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/utils/cac_activity_logger.py",
+      "size": 8682,
+      "sha256": "9f9fb570d9c717a3b0f33355e400f52340e80ccc81f4b746fcf625606ecd5002",
+      "purpose": "Model/trainer/scorer or required package dependency: cac_activity_logger.py",
+      "license_or_origin": "PaAno/HA-PaAno research implementation;respective MIT notices;source:utils/cac_activity_logger.py",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/utils/data_preprocess.py",
+      "size": 7273,
+      "sha256": "3824e3eaba9b61effeb641a42a90b152abf7ea9e4e4520461e2b2d912ac2bcef",
+      "purpose": "Model/trainer/scorer or required package dependency: data_preprocess.py",
+      "license_or_origin": "PaAno/HA-PaAno MIT plus TSB-AD-derived ACF helper Apache-2.0",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/utils/evaluation.py",
+      "size": 1835,
+      "sha256": "2729f105d1c292a19773025d6d60a5eec5ec7939e5ed2ed933e6ed1bdfb62956",
+      "purpose": "Model/trainer/scorer or required package dependency: evaluation.py",
+      "license_or_origin": "PaAno/HA-PaAno research implementation;respective MIT notices;source:utils/evaluation.py",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/utils/metrics.py",
+      "size": 2425,
+      "sha256": "bebcda215e8571c9dc4a854ab1cfd0b1f89d3babc064cb2849c2850b5e0b0179",
+      "purpose": "Model/trainer/scorer or required package dependency: metrics.py",
+      "license_or_origin": "TSB-AD-derived evaluator:Apache-2.0;retain source/adaptation notices",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/utils/result_saver.py",
+      "size": 2829,
+      "sha256": "d5448a79fa8d7bbfa8c3157d582ab00fa0b6b84b3ff1c9564f69795ee1c336cd",
+      "purpose": "Model/trainer/scorer or required package dependency: result_saver.py",
+      "license_or_origin": "PaAno/HA-PaAno research implementation;respective MIT notices;source:utils/result_saver.py",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/_reference/utils/utils.py",
+      "size": 4372,
+      "sha256": "5d2b3ee824137781140bbc8362fe5353dce37812f4fb127c64e84929091353bc",
+      "purpose": "Model/trainer/scorer or required package dependency: utils.py",
+      "license_or_origin": "Mixed PaAno/HA-PaAno MIT;RevIN redistribution per maintainer authorization,additional-conditions gate",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/binding.py",
+      "size": 345,
+      "sha256": "b9eb8300af37d66dcd2290e92422fadf74985cc8a7ddbfe87d15351c1212e992",
+      "purpose": "Model/trainer/scorer or required package dependency: binding.py",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/configuration.py",
+      "size": 3925,
+      "sha256": "e07d6d26b6a7c05a2e63034637bbca3baa97d26d935a8766f78f4062dbed3c02",
+      "purpose": "Model/trainer/scorer or required package dependency: configuration.py",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "src/ha_paano/r2_configuration.py",
+      "size": 5370,
+      "sha256": "000c94f57966624e0efc88c3887a377de6717a4850ff21e0d1645cd413751e46",
+      "purpose": "Exact split/data/config identity checks and54job expansion",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "A_HISTORICAL_PATHS_NOT_UNIFIED_RNG",
+      "verification_status": "TargetedCPUtestsPASS;54dryruns;2isolatedsyntheticrunnerI/Ochecks"
+    },
+    {
+      "path": "src/ha_paano/r2_controls.py",
+      "size": 3224,
+      "sha256": "e90bd262ba0c60dd144db53ad6a9b000c85ca1f86a5b4639fce8e32ecf3e3da6",
+      "purpose": "Fixed8DMean-only hook and post-best state/LSDP capture",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "A_HISTORICAL_PATHS_NOT_UNIFIED_RNG",
+      "verification_status": "TargetedCPUtestsPASS;54dryruns;2isolatedsyntheticrunnerI/Ochecks"
+    },
+    {
+      "path": "src/ha_paano/r2_routes.py",
+      "size": 2972,
+      "sha256": "fcd57f3d8ea42a82ba984641b56737a38b6e8dae4451d8441881403766e15950",
+      "purpose": "Exact16historical model/trainer routes",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "A_HISTORICAL_PATHS_NOT_UNIFIED_RNG",
+      "verification_status": "TargetedCPUtestsPASS;54dryruns;2isolatedsyntheticrunnerI/Ochecks"
+    },
+    {
+      "path": "src/ha_paano/r2_runner.py",
+      "size": 10615,
+      "sha256": "c8cfe5196d31107fdb9dc3aa9c6603fc143a8e80954ee148595d85f45bf07dd5",
+      "purpose": "Portable original per-series fit/bank/score/evaluate/save sequence",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "A_HISTORICAL_PATHS_NOT_UNIFIED_RNG",
+      "verification_status": "TargetedCPUtestsPASS;54dryruns;2isolatedsyntheticrunnerI/Ochecks"
+    },
+    {
+      "path": "src/ha_paano/runner.py",
+      "size": 4305,
+      "sha256": "42e68dacab2d060e6e8b3ee7ecf25c315213887c518c12569c022bc9fa7d7d8e",
+      "purpose": "Model/trainer/scorer or required package dependency: runner.py",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "ORIGINAL_FINAL_U_JLC_M_C_UNCHANGED",
+      "verification_status": "Existingbodiesunchangedorimport-onlyport;CPUregression/frozencomparisonPASS"
+    },
+    {
+      "path": "tests/r2_probe.py",
+      "size": 9239,
+      "sha256": "3d8a8abd4cd12f776348a32734fa31ae5a94d2cc36885aa26a0183507001fa7d",
+      "purpose": "Synthetic CPU validation/probe, never paper experiment results",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "SYNTHETIC_TEST_ONLY_NOT_EXPERIMENT_RESULTS",
+      "verification_status": "18testsPASS;17CPUrouteprobes;noformaltraining"
+    },
+    {
+      "path": "tests/test_core.py",
+      "size": 10771,
+      "sha256": "1968c6dcd97a7fd97227998ff48c605dca5f627af11f54ad099b170aaaeed816",
+      "purpose": "Synthetic CPU validation/probe, never paper experiment results",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "SYNTHETIC_TEST_ONLY_NOT_EXPERIMENT_RESULTS",
+      "verification_status": "18testsPASS;17CPUrouteprobes;noformaltraining"
+    },
+    {
+      "path": "tests/test_r2.py",
+      "size": 7310,
+      "sha256": "7c8dcb68a33cb011b4b47d13a17c105bcd4e3838fe11052a82fe0a8fc48a5af9",
+      "purpose": "Synthetic CPU validation/probe, never paper experiment results",
+      "license_or_origin": "Original additions/packaging:MIT,Copyright(c)2026PengZhang;third-party portions excluded",
+      "scientific_identity": "SYNTHETIC_TEST_ONLY_NOT_EXPERIMENT_RESULTS",
+      "verification_status": "18testsPASS;17CPUrouteprobes;noformaltraining"
+    }
+  ],
+  "self_exclusion": "This manifest is included in the count, but its own size/SHA record is excluded to avoid recursion; the external RELEASE_CANDIDATE_MANIFEST report records its actual size/SHA.",
+  "self_metadata": {
+    "path": "docs/PUBLISHABLE_FILES.json",
+    "purpose": "Exactreviewedpublicationallowlistandcontenthashes",
+    "license_or_origin": "OriginalMITpackagingmetadata",
+    "verification_status": "Finalset/hashreadback"
+  },
+  "code_bundle_sha256": "c3fa869b7f9465194c5e90bbb4c32964bdb16c1a83af3d1b6aca489eac14cd15",
+  "code_bundle_definition": "SHA256(JSON compact sorted [relative_path,sha256] for src/,scripts/,configs/; separators=(',',':'), ASCII JSON)",
+  "payload_sha256_excluding_self": "117017b674e994443e92a11cd8ac9622e87d3181eafaa8840b1ff9b81e09cbd2",
+  "payload_definition": "SHA256(JSON compact sorted [relative_path,sha256] for all publication files except this manifest;separators=(',',':'),ASCII JSON)",
+  "private_directory_excluded": ".release_audit/",
+  "raw_signals_scores_weights_bundled": false,
+  "manual_release_gate": [
+    "MaintainerreviewofRevINauthorization-specificadditionalconditions",
+    "AuthorreviewofexactGitsetandnewpublicationauthorization;nouploadauthorizedbythisrepair"
+  ],
+  "unverified": [
+    "FullCUDA100step/batch512reproduction",
+    "1692/540fitreruns",
+    "Cleaninstallation",
+    "Otherdevices/seedsoutsideCPUprobes"
+  ]
+}

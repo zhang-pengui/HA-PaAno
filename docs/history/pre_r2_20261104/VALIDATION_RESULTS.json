@@ -1,0 +1,104 @@
+{
+  "checks": [
+    {
+      "name": "U_reference_candidate_CPU_equivalence",
+      "status": "PASS",
+      "exact_hash_or_value_equality": true,
+      "compared_fields": [
+        "track",
+        "initial_parameters",
+        "forward",
+        "loss_observations",
+        "gradients",
+        "updates",
+        "optimizer_states",
+        "final_parameters",
+        "torch_rng",
+        "python_rng",
+        "numpy_rng",
+        "patch_scores",
+        "point_scores",
+        "metrics",
+        "optimizer_steps",
+        "cuda_initialized"
+      ],
+      "optimizer_steps": 6,
+      "cuda_initialized": false
+    },
+    {
+      "name": "M_reference_candidate_CPU_equivalence",
+      "status": "PASS",
+      "exact_hash_or_value_equality": true,
+      "compared_fields": [
+        "track",
+        "initial_parameters",
+        "forward",
+        "loss_observations",
+        "gradients",
+        "updates",
+        "optimizer_states",
+        "final_parameters",
+        "torch_rng",
+        "python_rng",
+        "numpy_rng",
+        "patch_scores",
+        "point_scores",
+        "metrics",
+        "optimizer_steps",
+        "cuda_initialized"
+      ],
+      "optimizer_steps": 6,
+      "cuda_initialized": false
+    },
+    {
+      "name": "syntax",
+      "status": "PASS",
+      "file_count": 32
+    },
+    {
+      "name": "copied_source_hashes",
+      "status": "PASS",
+      "record_count": 25
+    },
+    {
+      "name": "U_formal_CLI_dry_run",
+      "status": "PASS",
+      "series": 350,
+      "writes": 0,
+      "training_started": false
+    },
+    {
+      "name": "M_formal_CLI_dry_run",
+      "status": "PASS",
+      "series": 180,
+      "writes": 0,
+      "training_started": false
+    },
+    {
+      "name": "U_joint_fit_score_evaluate_save",
+      "status": "PASS",
+      "synthetic_points": 512,
+      "num_iters": 6,
+      "batch_size": 8,
+      "paper_result": false
+    },
+    {
+      "name": "M_joint_fit_score_evaluate_save",
+      "status": "PASS",
+      "synthetic_points": 512,
+      "num_iters": 6,
+      "batch_size": 8,
+      "paper_result": false
+    },
+    {
+      "name": "public_unit_tests",
+      "status": "PASS",
+      "tests": 11,
+      "full_experiment": false,
+      "command": "python -B -X utf8 -m unittest discover -s tests -v"
+    }
+  ],
+  "training_scope": "synthetic CPU only; six optimizer steps per probe",
+  "gpu_training_started": false,
+  "all_passed": true
+}

@@ -1,0 +1,29 @@
+{
+  "created_at": "2026-10-17T05:02:32.357418+00:00",
+  "status": "PASS",
+  "publishable_file_count": 59,
+  "syntax_files": 32,
+  "credential_private_path_findings": [],
+  "scan_scope": "Actual Git-visible candidate text only; targeted secret/path literals, suffix/size allowlist, JSON syntax and Python AST. No guarantee of exhaustive semantic secret detection.",
+  "private_audit_and_fixture_ignored": true,
+  "data_scores_weights_copied": 0,
+  "new_git_commits": 0,
+  "staged_files": 0,
+  "remotes": 0,
+  "uploads": 0,
+  "local_branch": "codex/release-candidate",
+  "citation_author": "Peng Zhang",
+  "new_code_license": "MIT",
+  "third_party_notices_retained": true,
+  "gpu_training_started": false,
+  "original_tree_check": "PASS",
+  "public_unit_tests": 11,
+  "license_basis": "Maintainer confirmed MIT for original additions and public-source redistribution permission for inherited RevIN1d; original third-party grants/notices retained. Not independent legal certification.",
+  "unverified": [
+    "clean reinstall",
+    "full CUDA/10-seed reproduction",
+    "cross-device exactness",
+    "production resource guards/resume",
+    "authorization-specific conditions review by rights holder"
+  ]
+}

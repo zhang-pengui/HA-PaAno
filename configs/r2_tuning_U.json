@@ -1,0 +1,402 @@
+{
+  "track": "U",
+  "split": "tuning",
+  "seeds": [
+    2000,
+    2001,
+    2002
+  ],
+  "expected_series": 48,
+  "source": {
+    "path": "revision_experiments/apin_r2_formal_tuning/configs/data_manifests.json",
+    "manifest_sha256": "bafb3127ece3803d34681a801895e6503b2c0bd38a1bedfee4897e169a0f9758",
+    "sha256": "1385328a355b41b5299fa30e0f4ff96a6ecb1d70e9629c010e38fcf68f22000d"
+  },
+  "members": [
+    {
+      "series": "003_NAB_id_3_WebService_tr_1362_1st_1462.csv",
+      "source": "NAB",
+      "domain": "WebService",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "39746eb9f69b47e974f10009ddc12ec9e709a02f73064bf102b381b416159d9c",
+      "bytes": 95143
+    },
+    {
+      "series": "004_NAB_id_4_Facility_tr_1007_1st_1437.csv",
+      "source": "NAB",
+      "domain": "Facility",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "4359addc7a13e784cedbc116a8243ba3efc65a3e53e25ea7e6a2a358de422066",
+      "bytes": 44654
+    },
+    {
+      "series": "007_NAB_id_7_Traffic_tr_624_1st_2087.csv",
+      "source": "NAB",
+      "domain": "Traffic",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "f17c9058e720edb71f286c1beae9d005c9fe1116564867cc8ee3038757b72120",
+      "bytes": 20213
+    },
+    {
+      "series": "012_NAB_id_12_Synthetic_tr_1007_1st_2787.csv",
+      "source": "NAB",
+      "domain": "Synthetic",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "a55dcf8e0f8db4049d5ed12eea829ba2706c7dc26c2cd3482d3a6fa66f9987c7",
+      "bytes": 67101
+    },
+    {
+      "series": "021_NAB_id_21_WebService_tr_500_1st_565.csv",
+      "source": "NAB",
+      "domain": "WebService",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "2babfdb6f282c7c025151d8aa1ed61d04104bb308f6a807912149bba90a7c1d6",
+      "bytes": 28480
+    },
+    {
+      "series": "033_WSD_id_5_WebService_tr_4559_1st_12588.csv",
+      "source": "WSD",
+      "domain": "WebService",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "01e4967354a64f38e2f93f8b9d98a4daf99e559ae3d5a1ee8250c42f56500ce4",
+      "bytes": 164327
+    },
+    {
+      "series": "038_WSD_id_10_WebService_tr_4042_1st_4142.csv",
+      "source": "WSD",
+      "domain": "WebService",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "323e9c97914cf2cb2f842469066df0598b8f3bcd7acdea8e82d9ac9d8f0a4813",
+      "bytes": 143375
+    },
+    {
+      "series": "045_WSD_id_17_WebService_tr_2566_1st_2666.csv",
+      "source": "WSD",
+      "domain": "WebService",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "daba14adb0065266c0f5655988f715232b7d701d9d8b03fa5b251681e1f0415b",
+      "bytes": 261371
+    },
+    {
+      "series": "053_WSD_id_25_WebService_tr_4559_1st_9198.csv",
+      "source": "WSD",
+      "domain": "WebService",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "66d6a68b8f83bbfa5354022e176e80ffdbbf6f48184c6b38ff60acc1ab73c36b",
+      "bytes": 163570
+    },
+    {
+      "series": "070_WSD_id_42_WebService_tr_2102_1st_2202.csv",
+      "source": "WSD",
+      "domain": "WebService",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "0570ee72a54fbfd285fb44d873ce15a41fbe07a71ef2f216192c1585d10e3c2e",
+      "bytes": 102521
+    },
+    {
+      "series": "142_MSL_id_3_Sensor_tr_1525_1st_4575.csv",
+      "source": "MSL",
+      "domain": "Sensor",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "85e4495914a26491cd241ccf962c28906a8e09dd72c0afa5a7c3f0746239eb2a",
+      "bytes": 127683
+    },
+    {
+      "series": "146_MSL_id_7_Sensor_tr_554_1st_1172.csv",
+      "source": "MSL",
+      "domain": "Sensor",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "8ca4e1b810bf25fcfbef5fdc168112465f5a2e72c5f7a1fa56b70cad3c4d580b",
+      "bytes": 14593
+    },
+    {
+      "series": "152_Stock_id_4_Finance_tr_500_1st_2.csv",
+      "source": "Stock",
+      "domain": "Finance",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "4612fea9db02c7ab4973e7e446155aa1721f65d925c3fe19c8301f9d4f1a0439",
+      "bytes": 208981
+    },
+    {
+      "series": "161_Stock_id_13_Finance_tr_500_1st_3.csv",
+      "source": "Stock",
+      "domain": "Finance",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "c7e09ca97aa83236c84cfb578f06d92c4299f846700cadf2302f193648caf8ca",
+      "bytes": 94036
+    },
+    {
+      "series": "174_MITDB_id_5_Medical_tr_50000_1st_539948.csv",
+      "source": "MITDB",
+      "domain": "Medical",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "ddbddf12bfa92594f5879627d7ea58156ff9e322227f626428fe75fc731ae23c",
+      "bytes": 5213417
+    },
+    {
+      "series": "182_SMD_id_5_Facility_tr_7174_1st_21230.csv",
+      "source": "SMD",
+      "domain": "Facility",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "8eebd0659e9057cd91e5ae6e6d252337d4a21e8ca680372d087f95c5fbdf75df",
+      "bytes": 312540
+    },
+    {
+      "series": "186_SMD_id_9_Facility_tr_5925_1st_17580.csv",
+      "source": "SMD",
+      "domain": "Facility",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "5409aa730ed06ee88c523b308b2d099af807724de08596c4b59c38d16c5d0c38",
+      "bytes": 258096
+    },
+    {
+      "series": "193_SMD_id_16_Facility_tr_5925_1st_17580.csv",
+      "source": "SMD",
+      "domain": "Facility",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "3ca717c0b5abb5b6f7342b7f56dfbb649b6c96e60d9e560334de438208d50d52",
+      "bytes": 258115
+    },
+    {
+      "series": "200_SMD_id_23_Facility_tr_7174_1st_21230.csv",
+      "source": "SMD",
+      "domain": "Facility",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "d359cdb83bd2ad82f034d1987853e875b6da54b33fcea3d518d9b8da5277e144",
+      "bytes": 312366
+    },
+    {
+      "series": "210_SMD_id_33_Facility_tr_5925_1st_17580.csv",
+      "source": "SMD",
+      "domain": "Facility",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "7aab164c802438f70fb3be502e687dab599b2d282e7a847325c3d17e7b6f400e",
+      "bytes": 258137
+    },
+    {
+      "series": "217_LTDB_id_2_Medical_tr_500_1st_266.csv",
+      "source": "LTDB",
+      "domain": "Medical",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "09748aafce0ac9efe2c3e2b5899ba448830470702df07b21994f764ededbc88f",
+      "bytes": 794884
+    },
+    {
+      "series": "230_MGAB_id_6_Synthetic_tr_25000_1st_42441.csv",
+      "source": "MGAB",
+      "domain": "Synthetic",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "2836bf0981afa54dbb636fe07666b2b3d6df46cbc5656a18ac401eca58a3b1e2",
+      "bytes": 2076821
+    },
+    {
+      "series": "235_SED_id_2_Medical_tr_2499_1st_3840.csv",
+      "source": "SED",
+      "domain": "Medical",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "9c084359b93c4a1a273f1a5ac1ff4a21399cb2c510372bbcf287da199a1ded1b",
+      "bytes": 109460
+    },
+    {
+      "series": "242_SVDB_id_6_Medical_tr_10726_1st_10826.csv",
+      "source": "SVDB",
+      "domain": "Medical",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "4eb9ed99ccbc7bead5f27af0a69a9a6e2f9cb9dc2c28bf3058fa013de021287a",
+      "bytes": 1306346
+    },
+    {
+      "series": "252_SVDB_id_16_Medical_tr_12167_1st_12267.csv",
+      "source": "SVDB",
+      "domain": "Medical",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "4a0ba265ac0b7b1bd4a2d659ff2a43842bc3eee340b7d8a0fe73e4434c6184ee",
+      "bytes": 2050972
+    },
+    {
+      "series": "259_TAO_id_3_Environment_tr_500_1st_7.csv",
+      "source": "TAO",
+      "domain": "Environment",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "396f924ce3a1fd21212b0bac5348766a098f91455de04183278a0e4e31b72f3b",
+      "bytes": 71893
+    },
+    {
+      "series": "265_IOPS_id_6_WebService_tr_6453_1st_6553.csv",
+      "source": "IOPS",
+      "domain": "WebService",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "5dbe4ee9b7dd5b2fd675abe0878defa1825f8bbe2591d28d435834acb9e2145e",
+      "bytes": 775753
+    },
+    {
+      "series": "270_IOPS_id_11_WebService_tr_5638_1st_5738.csv",
+      "source": "IOPS",
+      "domain": "WebService",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "bd80ecbb55627b96c1f8ecf58e4ed91d14103ed10642e9e111ea5eed132daf2d",
+      "bytes": 533850
+    },
+    {
+      "series": "280_NEK_id_4_WebService_tr_500_1st_231.csv",
+      "source": "NEK",
+      "domain": "WebService",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "cd8e1695ee1ed02f3432ed1debec94e1e6ca2531c7b20da2a6ce22fd0ac1fa1b",
+      "bytes": 22650
+    },
+    {
+      "series": "291_TODS_id_5_Synthetic_tr_500_1st_11.csv",
+      "source": "TODS",
+      "domain": "Synthetic",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "0b8e2f94bbd69c6723c1c7b6d3c44f0820f94cc941d676f412398fef34e003b6",
+      "bytes": 106383
+    },
+    {
+      "series": "300_TODS_id_14_Synthetic_tr_1250_1st_2555.csv",
+      "source": "TODS",
+      "domain": "Synthetic",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "08f5960a6fafcd183189696d89f521fa885fe47666da96941366e7b9ea409176",
+      "bytes": 106343
+    },
+    {
+      "series": "305_UCR_id_3_Medical_tr_3000_1st_5948.csv",
+      "source": "UCR",
+      "domain": "Medical",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "f7935d2fb6872307549939ed1ab12cd906bfe190c23353dfaf72f9c21cc20b52",
+      "bytes": 165073
+    },
+    {
+      "series": "312_UCR_id_10_Facility_tr_19948_1st_52000.csv",
+      "source": "UCR",
+      "domain": "Facility",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "ef252ddb8654c50014dee1e782e87f94bedb2c03b43acaab0a762febbe2305ed",
+      "bytes": 991067
+    },
+    {
+      "series": "323_UCR_id_21_HumanActivity_tr_48812_1st_128430.csv",
+      "source": "UCR",
+      "domain": "HumanActivity",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "70a5e894306d7f0052f27ec89f5f33080c653f96b75f340cecc98fda32234823",
+      "bytes": 1793711
+    },
+    {
+      "series": "347_UCR_id_45_Sensor_tr_2851_1st_5365.csv",
+      "source": "UCR",
+      "domain": "Sensor",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "51e30e63184a81feaaf7e7c89133d0fe5eb825056157d47573a0f6bab2479763",
+      "bytes": 149615
+    },
+    {
+      "series": "386_UCR_id_84_Environment_tr_2046_1st_5703.csv",
+      "source": "UCR",
+      "domain": "Environment",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "1674803d63149d296c14a80235e3fc75a8904b8971d24db91ea7e3e38dcc05e1",
+      "bytes": 97325
+    },
+    {
+      "series": "429_UCR_id_127_Medical_tr_14825_1st_29000.csv",
+      "source": "UCR",
+      "domain": "Medical",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "72ed1c0d38ce1a6d23a65e3a7eb17e70c791ac0853d21a3aedc6a75cf9f36b70",
+      "bytes": 448974
+    },
+    {
+      "series": "535_SMAP_id_5_Sensor_tr_1113_1st_1890.csv",
+      "source": "SMAP",
+      "domain": "Sensor",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "32a6736f23aa6bc15d5f4b8b84953b70de72fd432873a45703af1b9e947da513",
+      "bytes": 97936
+    },
+    {
+      "series": "543_SMAP_id_13_Sensor_tr_2020_1st_4550.csv",
+      "source": "SMAP",
+      "domain": "Sensor",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "6d952f29216acc628fcca9a7de7892970b77c2deec8dfc38a847b3f3de139962",
+      "bytes": 172014
+    },
+    {
+      "series": "560_YAHOO_id_10_Synthetic_tr_500_1st_893.csv",
+      "source": "YAHOO",
+      "domain": "Synthetic",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "5c9482f5e046b80560f486cfb7f945b9a5452fef926424aa225f356ea9a9855e",
+      "bytes": 27971
+    },
+    {
+      "series": "568_YAHOO_id_18_WebService_tr_500_1st_333.csv",
+      "source": "YAHOO",
+      "domain": "WebService",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "215d5fbce3f2e03dc9a6e583542a2f8212a3eb33a6366f55fd1b6d9b3ad6b9a3",
+      "bytes": 33078
+    },
+    {
+      "series": "573_YAHOO_id_23_Synthetic_tr_500_1st_623.csv",
+      "source": "YAHOO",
+      "domain": "Synthetic",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "df0e348e31c3ff7da4c740c58e8b40ed558061259cd47c696812bcbee76953f2",
+      "bytes": 27451
+    },
+    {
+      "series": "583_YAHOO_id_33_WebService_tr_500_1st_1616.csv",
+      "source": "YAHOO",
+      "domain": "WebService",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "bd08fa9d4e9b99bb6e15c37959932e68c7be2a820d3c5518a99b1b44f2f41465",
+      "bytes": 32546
+    },
+    {
+      "series": "643_YAHOO_id_93_WebService_tr_500_1st_1038.csv",
+      "source": "YAHOO",
+      "domain": "WebService",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "5e739548c5b7549658ef59f82403551c2882a3b32d877ed10f7a3e851e841c35",
+      "bytes": 32510
+    },
+    {
+      "series": "813_Exathlon_id_4_Facility_tr_10766_1st_12590.csv",
+      "source": "Exathlon",
+      "domain": "Facility",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "052f48d2f44d15feac8855701b1c938ed1dde3346d14a7e5e6202640b2909b6f",
+      "bytes": 313894
+    },
+    {
+      "series": "825_Exathlon_id_16_Facility_tr_10766_1st_12590.csv",
+      "source": "Exathlon",
+      "domain": "Facility",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "3f8aa95bdcdc44af112fbab5822d4e9576616d6ce6494769f9687eb21adae458",
+      "bytes": 260437
+    },
+    {
+      "series": "852_OPPORTUNITY_id_11_HumanActivity_tr_500_1st_566.csv",
+      "source": "OPPORTUNITY",
+      "domain": "HumanActivity",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "348b871d563d54837e34733b618c5d12fbf86efa8f60b8a8d83fac553499e440",
+      "bytes": 129635
+    },
+    {
+      "series": "864_OPPORTUNITY_id_23_HumanActivity_tr_895_1st_995.csv",
+      "source": "OPPORTUNITY",
+      "domain": "HumanActivity",
+      "split": "TSB-AD-U-Tuning",
+      "sha256": "3447026657db0f21f46a7133091c0d577f184d841c66c463df15ea975d95250b",
+      "bytes": 134425
+    }
+  ]
+}
+

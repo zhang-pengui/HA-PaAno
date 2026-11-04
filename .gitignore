@@ -1,0 +1,35 @@
+# Private local audit evidence, input paths, reference fixtures and test outputs
+/.release_audit/
+/data/
+/datasets/
+/outputs/
+/runs/
+/checkpoints/
+/logs/
+/.venv/
+/venv/
+/env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.idea/
+.vscode/
+.env
+.env.*
+*.local.json
+*.local.yaml
+*.log
+*.tmp
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.key
+*.pem
+*.p12
+*.pfx
+*.npz
+*.npy
+# Keep reviewed config JSON, documentation and lightweight provenance visible.

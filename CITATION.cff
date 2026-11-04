@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite this software and acknowledge the PaAno foundation and benchmark sources described in THIRD_PARTY_NOTICES.md. Paper publication details are not supplied in this candidate."
+type: software
+title: "HA-PaAno: Raw-Statistics-Aware Patch Representation Refinement for Univariate and Multivariate Time-Series Anomaly Detection"
+authors:
+  - family-names: Zhang
+    given-names: Peng
+license:
+  - MIT
+  - Apache-2.0
+keywords:
+  - time-series anomaly detection
+  - patch representation refinement
+  - reproducibility

@@ -1,0 +1,44 @@
+{
+  "GPU_workers": 1,
+  "device": "cuda:0",
+  "jobs": 3,
+  "fits": 540,
+  "precision": "unchanged FP32; no AMP",
+  "thread_environment_by_seed": {
+    "2000": {
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1",
+      "LOKY_MAX_CPU_COUNT": "1",
+      "JOBLIB_MULTIPROCESSING": "0"
+    },
+    "2001": {
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "2002": {
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "process": "one owned Python worker per condition/seed; per-series original scalar seed reset",
+  "resource_policy": "Public serial entry: no production queue/resource guard/resume claim; existing scientific/thread settings preserved.",
+  "actual_failures": "stop and preserve CUDA/OOM/allocation/nonfinite state or scores/metrics/checkpoint readback/IO/data identity/worker/concurrency failures",
+  "resume": "valid artifact identity + checksum only; never overwrite valid results; no automatic failed-job retry",
+  "memory_bank": "rebuilt in RAM for each fitted encoder; not required persisted",
+  "checkpoint": "full best-restored state saved and CPU readback-checked before atomic COMPLETE",
+  "source": {
+    "path": "revision_experiments/apin_r2_mean_only_eva180/configs/execution_protocol.json",
+    "sha256": "153a79eafd4d6f59136a46348bca0ef1f5228a35191f5fec4059a3dc30279b46"
+  }
+}
+

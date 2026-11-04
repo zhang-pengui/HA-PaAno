@@ -1,0 +1,105 @@
+{
+  "patch_size": 96,
+  "patch_stride": 1,
+  "batch_size": 512,
+  "num_iters": 100,
+  "optimizer": "AdamW",
+  "initial_lr": 0.0001,
+  "final_lr": 0.00001,
+  "weight_decay": 0.0001,
+  "jitter_strength": 0.01,
+  "jitter_probability": 0.5,
+  "scale_enabled": false,
+  "shift_enabled": false,
+  "lsdp_effective_init": 0.05,
+  "cac_effective_init": 0.1,
+  "revin": {
+    "enabled": true,
+    "affine": false,
+    "eps": 0.00001,
+    "min_sigma": 0.00001
+  },
+  "embedding_dim": 64,
+  "projection_dims": [
+    64,
+    256,
+    256
+  ],
+  "cnn_channels": [
+    128,
+    256,
+    128,
+    64
+  ],
+  "cnn_kernels": [
+    7,
+    5,
+    3,
+    3
+  ],
+  "memory_ratio": 0.1,
+  "memory_min_cores": "min(500,max(1,N-1)); cap to available N",
+  "memory_kmeans_random_state": 42,
+  "score_top_k": 3,
+  "triplet_margin": 0.1,
+  "triplet_scale": 0.1,
+  "negative": "off_diagonal_farthest_positive_projection",
+  "positive_offsets": [
+    -2,
+    -1,
+    1,
+    2
+  ],
+  "pretext_pairs": 5,
+  "pretext_gap": 96,
+  "pretext_lambda": "1-step/20 for step<20; otherwise 0",
+  "checkpoint": "strict lower pre-update total loss selects post-update full state; first exact tie; restore full state including BN",
+  "evaluation_scope": "historical full sequence; unchanged",
+  "protocol": "A_HISTORICAL_PATHS",
+  "seeds": [
+    2000,
+    2001,
+    2002
+  ],
+  "final_U": "JLC",
+  "final_M": "AvgPool+C",
+  "selection": {
+    "primary_metric": "VUS-PR",
+    "aggregation": "equal series mean per seed, then mean/sample SD(ddof=1) over three seed means",
+    "full_precision": true,
+    "exact_tie_only": true,
+    "near_tie_threshold": null,
+    "runtime_tiebreak": false,
+    "tied_maximum": "report full tied set; no forced single winner",
+    "historical_Eva_selection_bias_erased": false
+  },
+  "jitter_does_not_use_scale_or_shift": true,
+  "mean_only": {
+    "track": "M",
+    "mask": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "zero_based_keep": [
+      0,
+      4
+    ],
+    "interface": 8,
+    "placement": "full finite descriptor immediately before unchanged MLP",
+    "constructor": "same canonical M-C; no replacement/reinitialization",
+    "same_fixed_mask_training_and_inference": true
+  },
+  "series_rng": "reset same scalar Python/NumPy/Torch/CUDA seed, original PatchCreator reseed, original loader probe, historical constructor; no independent streams",
+  "no_old_result_reuse": true,
+  "source": {
+    "path": "revision_experiments/apin_r2_formal_tuning/configs/scientific_protocol.json",
+    "sha256": "e538a592835efffd5d716daa22fd95710157600b6bdcf9f28aa941caba92904f"
+  }
+}
+

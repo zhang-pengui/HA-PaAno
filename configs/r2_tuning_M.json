@@ -1,0 +1,178 @@
+{
+  "track": "M",
+  "split": "tuning",
+  "seeds": [
+    2000,
+    2001,
+    2002
+  ],
+  "expected_series": 20,
+  "source": {
+    "path": "revision_experiments/apin_r2_formal_tuning/configs/data_manifests.json",
+    "manifest_sha256": "548b136ee37b8dbbe2fb9c9f498b2ebae62396241068cd10cfa56334754bbb32",
+    "sha256": "1385328a355b41b5299fa30e0f4ff96a6ecb1d70e9629c010e38fcf68f22000d"
+  },
+  "members": [
+    {
+      "series": "004_MSL_id_3_Sensor_tr_530_1st_630.csv",
+      "source": "MSL",
+      "domain": "Sensor",
+      "split": "TSB-AD-M-Tuning",
+      "sha256": "8c66d4a5525db15840d4d58d881d647ce1e61a5388ebc603ecf2eadbd6c046a8",
+      "bytes": 577095
+    },
+    {
+      "series": "011_MSL_id_10_Sensor_tr_1525_1st_4590.csv",
+      "source": "MSL",
+      "domain": "Sensor",
+      "split": "TSB-AD-M-Tuning",
+      "sha256": "f266d167f0db1fd709423ecb59c01b567acd99f4d97e2df81d74d7d22f0b7b1c",
+      "bytes": 1445433
+    },
+    {
+      "series": "023_MITDB_id_5_Medical_tr_25000_1st_36913.csv",
+      "source": "MITDB",
+      "domain": "Medical",
+      "split": "TSB-AD-M-Tuning",
+      "sha256": "130f7c4404f8bd5807cde20e69478dd176c8da976bccef82c2f02c5386a377b7",
+      "bytes": 1484351
+    },
+    {
+      "series": "028_MITDB_id_10_Medical_tr_37500_1st_39948.csv",
+      "source": "MITDB",
+      "domain": "Medical",
+      "split": "TSB-AD-M-Tuning",
+      "sha256": "b7bcf3bbe8215bb35da728da1b2fc9d49c2200f696bf8daba8a32f792b9b0dc7",
+      "bytes": 2140360
+    },
+    {
+      "series": "040_GHL_id_9_Sensor_tr_50000_1st_92001.csv",
+      "source": "GHL",
+      "domain": "Sensor",
+      "split": "TSB-AD-M-Tuning",
+      "sha256": "c2a0f29c6af262fb16251d4663d5e56ef3dc8085f8a278ca2965e37901230699",
+      "bytes": 39691143
+    },
+    {
+      "series": "049_GHL_id_18_Sensor_tr_50000_1st_109001.csv",
+      "source": "GHL",
+      "domain": "Sensor",
+      "split": "TSB-AD-M-Tuning",
+      "sha256": "3097f30211eef2c905ca8b74066c56b0b365a32c5897fe4096b828e1bdf87f7e",
+      "bytes": 39709764
+    },
+    {
+      "series": "062_SMD_id_6_Facility_tr_7180_1st_15131.csv",
+      "source": "SMD",
+      "domain": "Facility",
+      "split": "TSB-AD-M-Tuning",
+      "sha256": "dda20568da0041b19f12eaf05d6f5dc88f37283c83d4b2f3a3816212849de577",
+      "bytes": 7811204
+    },
+    {
+      "series": "072_SMD_id_16_Facility_tr_7119_1st_15849.csv",
+      "source": "SMD",
+      "domain": "Facility",
+      "split": "TSB-AD-M-Tuning",
+      "sha256": "2c1a273cc2e8bb9742d00c8be0632217275053b528007d1430a59c1f01e3d8e9",
+      "bytes": 8399285
+    },
+    {
+      "series": "082_LTDB_id_4_Medical_tr_4456_1st_4556.csv",
+      "source": "LTDB",
+      "domain": "Medical",
+      "split": "TSB-AD-M-Tuning",
+      "sha256": "698edd323bc804f797cf5d8e4222d70844f10202081d4379543f162315f43183",
+      "bytes": 1261256
+    },
+    {
+      "series": "090_SVDB_id_7_Medical_tr_12157_1st_12257.csv",
+      "source": "SVDB",
+      "domain": "Medical",
+      "split": "TSB-AD-M-Tuning",
+      "sha256": "443e3e64f65cb7c4002c4e149dc12997889d7f2e74cfdb275b023a3a2b4ab846",
+      "bytes": 628354
+    },
+    {
+      "series": "107_SVDB_id_24_Medical_tr_32805_1st_32905.csv",
+      "source": "SVDB",
+      "domain": "Medical",
+      "split": "TSB-AD-M-Tuning",
+      "sha256": "79af5662ff1534500c68e74263822019bd2f0ed25d82f46e46f8779888730219",
+      "bytes": 3200090
+    },
+    {
+      "series": "113_SVDB_id_30_Medical_tr_4552_1st_4652.csv",
+      "source": "SVDB",
+      "domain": "Medical",
+      "split": "TSB-AD-M-Tuning",
+      "sha256": "c79e1884bc009b1b0d11ca8b27c5c4d33a535f949de2ee4851ae81e5e422eda7",
+      "bytes": 2945634
+    },
+    {
+      "series": "120_TAO_id_5_Environment_tr_500_1st_3.csv",
+      "source": "TAO",
+      "domain": "Environment",
+      "split": "TSB-AD-M-Tuning",
+      "sha256": "5926d15432d2b67d7348b6107c06daa7707b78f3994e0d9fb11b70afc74a6763",
+      "bytes": 211593
+    },
+    {
+      "series": "126_TAO_id_11_Environment_tr_500_1st_7.csv",
+      "source": "TAO",
+      "domain": "Environment",
+      "split": "TSB-AD-M-Tuning",
+      "sha256": "bb5df8d457b6b06ae6d9386651252294e22f9a5c3ffe58264c47a9b3b1b7679e",
+      "bytes": 211767
+    },
+    {
+      "series": "131_OPPORTUNITY_id_3_HumanActivity_tr_7016_1st_26691.csv",
+      "source": "OPPORTUNITY",
+      "domain": "HumanActivity",
+      "split": "TSB-AD-M-Tuning",
+      "sha256": "da34489a3117911ac3ca04dcd4e0e2c153e499cd96bcb6add38b050124d796f4",
+      "bytes": 41279685
+    },
+    {
+      "series": "140_CATSv2_id_3_Sensor_tr_28307_1st_28407.csv",
+      "source": "CATSv2",
+      "domain": "Sensor",
+      "split": "TSB-AD-M-Tuning",
+      "sha256": "c4e9706efd923a595d93ade46d20cad0ac586bc704eec5ec98009afda585db7b",
+      "bytes": 105415516
+    },
+    {
+      "series": "149_SMAP_id_6_Sensor_tr_2128_1st_5000.csv",
+      "source": "SMAP",
+      "domain": "Sensor",
+      "split": "TSB-AD-M-Tuning",
+      "sha256": "06ec1ec91cb267026426f796a26efb9f2b8000a9a7d91384fea187308b968970",
+      "bytes": 903500
+    },
+    {
+      "series": "164_SMAP_id_21_Sensor_tr_1976_1st_4200.csv",
+      "source": "SMAP",
+      "domain": "Sensor",
+      "split": "TSB-AD-M-Tuning",
+      "sha256": "263494508921547457ab3340b3ee92ec949650b21e2e886021011b348cf510e3",
+      "bytes": 806601
+    },
+    {
+      "series": "178_Exathlon_id_5_Facility_tr_12538_1st_12638.csv",
+      "source": "Exathlon",
+      "domain": "Facility",
+      "split": "TSB-AD-M-Tuning",
+      "sha256": "ade5f3cdbffa2b3464497babe566041dff871bb9d5e9da9d1e17f3fefdedc16c",
+      "bytes": 21892023
+    },
+    {
+      "series": "195_Exathlon_id_22_Facility_tr_10766_1st_12590.csv",
+      "source": "Exathlon",
+      "domain": "Facility",
+      "split": "TSB-AD-M-Tuning",
+      "sha256": "2825858c31806a7ed49befa912d5cd078ea36d4dd9f7dae2b7925d7e2c4b1b9d",
+      "bytes": 11893438
+    }
+  ]
+}
+
