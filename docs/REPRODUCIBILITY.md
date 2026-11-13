@@ -12,7 +12,7 @@ The original experiment drivers are not redistributed: they contain local paths,
 
 The original run seeds Python, NumPy, Torch and CUDA. PatchCreator reseeds Torch per series; the initial `next(iter(train_loader))` precedes model construction and must not be removed. U raw-context queueing and temporary Jitter hooks preserve the original call order. M creates the historical module before replacing its CAC, preserving initialization RNG consumption. No cudnn deterministic option, precision mode, loss, optimizer, scheduler, batch size, sample ordering or memory-bank mathematics was changed.
 
-The source model is retained as separate private modules because collapsing constructors or optimizing unused parts could alter RNG/parameter semantics. Only package imports and one commented private path were changed in inherited files. The import-excluded executable AST is identical for all 22 copied Python modules; file hashes and diffs are in SOURCE_PROVENANCE.json.
+The model code is retained as separate internal modules included in the public repository under `src/ha_paano/_reference/`. Collapsing constructors or optimizing unused parts could alter RNG or parameter semantics. Only package imports and one commented local path were changed in the original inherited files. The import-excluded executable AST is identical for all 22 originally copied Python modules; file hashes and diffs are in [SOURCE_PROVENANCE.json](SOURCE_PROVENANCE.json).
 
 ## Completed validation versus unverified claims
 

@@ -4,7 +4,7 @@ Official implementation and reproducibility code for **HA-PaAno: Raw-Statistics-
 
 The source code is publicly available in this repository. The manuscript is currently under revision at Applied Intelligence. No acceptance, DOI or publication details are claimed; no GitHub Release or tag has been created.
 
-HA-PaAno studies how raw statistical context and temporal refinements complement normalized patch representations within PaAno. U-JLC and M-C are the reported evaluation configurations. The later complete tuning study ranks C first on average in both tracks; it does not establish U-JLC as a universally optimal choice. It refines the embedding pathway while retaining PaAno's learning objectives and memory-bank anomaly scoring; it does not introduce those foundations.
+HA-PaAno studies how raw statistical context and temporal refinements complement normalized patch representations within PaAno. It retains PaAno's learning objectives and memory-bank anomaly scoring. The paper reports both CAC-only (C-only) and JLC on U Eva-350 and C-only on M Eva-180. U-JLC was selected after examining the Eva-350 module results. On U Tuning-48, C-only ranked first on average, but its lead was small relative to variation across seeds and it did not rank first for any individual seed.
 
 ## Final pathways
 
@@ -14,11 +14,20 @@ HA-PaAno studies how raw statistical context and temporal refinements complement
 | Multivariate (M) | None | Average | Revised CAC without relative normalization |
 
 - **Jitter** uses the frozen probability 0.50 and noise multiplier 0.010 of the local population standard deviation. It is training-only. Scale/shift are not part of the final U-JLC pathway.
-- **LSDP** is a learnable average/maximum pooling refinement with a 64-dimensional output. Mixed pooling is an existing mathematical family, not a new pooling family claimed here.
-- **CAC** adds a gated residual from eight statistics of raw pre-RevIN channel dispersion and first-difference activity. In U training, CAC receives pre-Jitter raw context. Its C=1 descriptor has repeated entries; it is not an attention map or a channel-identity-preserving dependency model.
+- **Learnable Statistical Dual Pooling (LSDP)** mixes average and maximum pooling in a 64-dimensional embedding. Its per-coordinate mixing coefficients are trainable and shared across patches within each fitted model. In the U Tuning-48 JLC runs, the fitted coefficients stayed close to their initial value of 0.05, yielding approximately 95% average pooling and 5% maximum pooling. Mixed pooling is an existing mathematical family.
+- **Context-Aware Calibration (CAC)** maps eight statistics of raw pre-RevIN channel dispersion and first-difference activity to a patch-dependent residual. A sigmoid-parameterized scalar scales that residual; the scalar is shared across patches within each fitted model and is not an input-dependent gate. Its effective value is initialized to 0.10 and averaged 0.10003088 in the archived full-C M Tuning-20 checkpoints. The small change in the scalar does not establish how much the CAC MLP learned. In U training, CAC uses the original pre-jitter patch. Its C=1 descriptor has repeated entries; it is not an attention map or a channel-identity-preserving dependency model.
 - **RevIN** belongs to the reproduction backbone, not the HA-PaAno contribution.
 
-Historical root defaults and older relative-normalization CAC are not the final bindings. Some historical modules remain private implementation dependencies to preserve initialization and RNG consumption; use the documented final or independent R2 entry below.
+Historical root defaults and older relative-normalization CAC are not the final bindings. The documented entry points use internal modules included in this repository under `src/ha_paano/_reference/`. The modules are kept separate to preserve initialization and random-number consumption; the entry points do not require the original research checkout.
+
+## Reproducibility scope
+
+| Public entry point | Supported experiments |
+|---|---|
+| [`scripts/run_experiment.py`](scripts/run_experiment.py) | U-JLC on U Eva-350 and M-C on M Eva-180, one seed per invocation (2000–2009). |
+| [`scripts/run_r2_experiment.py`](scripts/run_r2_experiment.py) | Eight module combinations on U Tuning-48 and M Tuning-20, plus M Mean-only CAC on M Tuning-20 and M Eva-180 (seeds 2000–2002). |
+
+There are no direct public entry points for the standalone pooling controls (Table 10), the historical CAC input controls (Table 11, Panel A), the R3 Major 2 matched-constructor residual comparison (Table 11, Panel B), the full evaluation-split factorial, or the formal multi-seed PaAno-Re evaluation. The separate U C-only evaluation reported in the paper is not exposed by the final-model entry point. These limits do not affect the supported routes listed above.
 
 ## Installation
 
@@ -74,7 +83,7 @@ The reproduced triplet rule selects the legal off-diagonal positive projection w
 
 The independent `scripts/run_r2_experiment.py` supports **B, J, L, C, JL, JC, LC, JLC** on both U Tuning-48 and M Tuning-20, using seeds **2000–2002**. B is the genuine PaAno-Re baseline; J/L/C mean Jitter/LSDP/CAC. Scale/shift are disabled. Historical constructor paths and per-series seed resets are retained; the same scalar seed is **not** strict cross-condition common-random-number control.
 
-Use flat, separately obtained `data/TSB-AD-U-Tuning/` and `data/TSB-AD-M-Tuning/` directories. R2 verifies exact members, sizes and SHA256 against `configs/r2_tuning_U.json`, `r2_tuning_M.json` and `r2_evaluation_M.json`. The same scientific p96/stride1/batch512/100-step settings are pinned in `r2_protocol.json`. This is not the original entry's relaxed diagnostic mode.
+Use flat, separately obtained `data/TSB-AD-U-Tuning/` and `data/TSB-AD-M-Tuning/` directories. R2 verifies exact members, sizes and SHA256 against `configs/r2_tuning_U.json`, `configs/r2_tuning_M.json` and `configs/r2_evaluation_M.json`. The same scientific p96/stride1/batch512/100-step settings are pinned in `configs/r2_protocol.json`. This is not the original entry's relaxed diagnostic mode.
 
 Default commands only validate; they do not train, import Torch, spawn a worker or create output:
 
@@ -104,7 +113,7 @@ python -B scripts/run_r2_experiment.py --track M --condition C --mean-only --see
 
 Repeat with seeds 2001 and 2002 and fresh output paths. Adding `--execute` explicitly fits, builds the bank, scores and evaluates in a fresh condition/seed child; CPU is the default, CUDA requires `--device cuda`. The parent waits and propagates its child's return code; there is no implicit retry or multi-condition interpreter. The original final-model entry is unchanged.
 
-The tuning matrix plus M20 Mean-only is **51 jobs / 1692 fits**. M180 Mean-only adds **3 jobs / 540 fits**. `--list-jobs` only expands identities, not data validity or execution. M180 uses the archived seed-specific thread environment from `r2_eva_execution.json`; tuning inherits native settings.
+The tuning matrix plus M20 Mean-only is **51 jobs / 1692 fits**. M180 Mean-only adds **3 jobs / 540 fits**. `--list-jobs` only expands identities, not data validity or execution. M180 uses the archived seed-specific thread environment from `configs/r2_eva_execution.json`; tuning inherits native settings.
 
 For example, this command intentionally executes one U-JLC tuning job after its dry run (it is not executed during release preparation):
 
